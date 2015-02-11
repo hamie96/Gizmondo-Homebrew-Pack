@@ -1,0 +1,198 @@
+
+MAME GP2X 2.3 (A.K.A MAME4ALL Alpha 2) (07 de mayo de 2006)
+-----------------------------------------------------------
+
+- Corregidos los fallos de la versión anterior 2.2:
+  Fallo con el sonido en diversos juegos (Bomb Jack, Pinball Action, etc).
+  Fallo con juegos con el micro I8085 (Phoenix vuelve a funcionar con sonido).
+  Centrado de pantalla en el modo de video rotado y no escalado.
+- Incluidas algunas modificaciones del MAME GP32 2.0 y 2.1 de Slaanesh:
+  Nuevos juegos jugables: Robocop, Hippodrome.
+  Mejoras en el sonido: Sly Spy, Midnight Resistance, Dark Seal, Juno First.
+  Mejoras en los controles: Midnight Resistance, Heavy Barrel, Ikari Warriors, Victory Road, Defender.
+  Optimizaciones: Galaga.
+  Otras mejoras: Time Pilot, Pooyan, Tutankham, Gyruss.
+- Romset modificado (MAME 0.35b5): Sly Spy (revision 3) (slyspy)
+- Soporte para 3 nuevos romsets (MAME 0.35b5):
+  Boulderdash / Boulderdash Part 2 (bouldash), Sly Spy (revision 2) (slyspy2), Gate Of Doom (revision 4) (gatedoma)
+
+NOTA: La calidad del sonido de algunos juegos de CPS-1, Neo·Geo, etc, ha empeorado debido a las optimizaciones para ganar velocidad,
+para que suenen como en anteriores versiones hay que seleccionar la opción de sonido "ACCURATE".
+
+- Gracias a todas las donaciones PayPal: EvilDragon (www.gp32x.de), Federico Mazza, Nandove, Videogame Stuff, Denis Evans, Ricardo Cabello,
+  Elías Ballesteros, J.Antonio Serralvo Martín, bagmouse7, Suj, funkyferdy, Gieese, Vincent Cleaver, William Burnett, Bleeg,
+  Martin Dolphin, Ilarri, Glen Stones, Dr.Konami, Augusto Carlos Pérez Arriaza, Charles Box, Borochi, Kayday, George Tavoulareas,
+  Timofonic, Fabrice Canava, Redox, Javitotrader, remowilliams, Scott Contrera, Jinhyun Seo, Anarchy (www.hardcore-gamer.net), 
+  Craig (www.gp2x.co.uk), Shane Monroe, Simon Beattie, Stefan Braunstein, DaveC, Colin Bradshaw, Dana Rodolico, Revod, Michael Evers,
+  Riccardo Pizzi, Fosfy45, Dj Syto, Rob Pittman, Stefan Mueller, Musa, Unai, Sascha Reuter, Globalwide Technologies Limited, 
+  Juan Rivera-Novoa, Mark Carin, Julio Catalina Piedrahita, techFreak (www.gp2xtr.com), Darius Hardy, Charles Andre, Matt Brimelow,
+  McOskar, SBock, Daniel PP Saurborn, Picayuco, Kojote (www.pdroms.com), Knoxximus, Tony Watterson, Matthew Forman, naples39,
+  NEO (www.elotrolado.net), Patrick Mettes, Angel Molero Grueso, Lubidog, Smiths (www.emuholic.com), retromander, Ruben Villar,
+  Snakefd99cb, Harkaitz, BZFrank, Sang Kim, phoda, Caesaris, Furanchu, Selcuk Cegit, K-Navis, Estaño, Jeff Hong, Jasmot, Igboo,
+  Sergio Onorati, Julien Perret, Cheap Impostor.
+
+MAME GP2X 2.2 (A.K.A MAME4ALL Alpha 1) (01 de mayo de 2006)
+-----------------------------------------------------------
+
+- El proyecto MAME GP2X une sus fuerzas al genial trabajo realizado por Chui en el MAME4ALL http://chui.dcemu.co.uk/mame4all.html
+  Ahora es compatible con GP2X, Dreamcast, Windows y Linux, compilado tanto en C como en C++. La estructura interna ha cambiado
+  bastante con respecto a anteriores versiones, por lo que probablemente haya algunos nuevos bugs, ¡por favor reportadlos!.
+- Chui: Optimizaciones en cores gráficos: TMNT, System 16, CPS-1, Contra, Toki, Aero Fighters, Last Duel y Atari System 1.
+- Chui: Optimizaciones en cores de sonido: Generic, Streams, FM, ADPCM, UDP7759, K007232 y YM2151.
+- Chui: El emulador arranca más rápidamente ya que se ha optimizado la velocidad del chequeo de juegos disponibles en la SD.
+- Franxis: Compilado con GCC 4.1.0.
+- Franxis: Optimizaciones en el modo de pantalla rotado.
+
+MAME GP2X 2.1 (07 de abril de 2006)
+-----------------------------------
+
+- Más rápido (optimizaciones en las librerías de gráficos y sonido).
+- Mejoras en el sonido en algunos juegos clásicos como Galaxian.
+- Mejoras en la librería de sonido de Namco. Consiguen hacer que juegos como Gaplus suenen ok. Thx, Slaanesh.
+- Nuevo DAT clrmame.dat creado por [MaD] actualizado hasta el MAME GP2X 2.1.
+
+MAME GP2X 2.0 (26 de marzo de 2006)
+-----------------------------------
+
+- Más optimizaciones.
+- Soporte para 32 Mb de RAM adicional. Nuevos títulos jugables: Pulstar, Waku Waku 7, etc.
+- Soporte para 9 nuevos romsets de MAME 0.35b9-0.35rc1 (total de juegos soportados 1124):
+  MAME 0.35b9: Gaplus (set 1) (gaplus), Gaplus (set 2) (gaplusa), Galaga 3 (set 1) (galaga3), Galaga 3 (set 2) (galaga3a)
+  MAME 0.35b12: Salamander (salamand), Lifeforce (US) (lifefrce), Lifeforce (Japan) (lifefrcj), Mega Zone (megazone)
+  MAME 0.35rc1: Pang! 3 (Japan) (pang3)
+
+MAME GP2X 1.9 (16 de marzo de 2006)
+-----------------------------------
+
+- Más rápido (opciones del compilador, memcpy optimizado en asm, etc).
+- Soporte para 16 Mb de RAM adicional. Suficiente para jugar al Metal Slug con sonido por ejemplo. Thx, Rlyeh y Unai.
+- Algunas correcciones en el sonido (no se modifica al arrancar un nuevo juego ni durante el modo de video rotado+escalado).
+- Algunas correcciones en el video (buffer de video de mayor tamaño para no tener problemas con ningún juego en ningún modo gráfico).
+- Street Fighter 2 Turbo corregido. Thx, Virucho28.
+- Cambios internos: Todo el código compilado con el GCC 4.0.2 (corregido el core de Z80 en C) y con la máxima optimización (corregida la Minimal Lib).
+
+MAME GP2X 1.8 (05 de marzo de 2006)
+-----------------------------------
+
+- Soporte de Auto-fire.
+- Control de volumen realmente corregido. Además con VolUp+VolDown simultaneamente se vuelve al volumen por defecto.
+- Nuevo core de sonido de YM3812 de mejor calidad (MAME 0.35b6): Snow Bros, Hellfire, Gemini Wing, Bubble Bobble, etc.
+- Mejoras en el core DrZ80: Ahora es compatible con los juegos de Neo·Geo. Gracias a Flubba.
+- Mejoras en los gráficos: Tokio.
+- Mejoras en el sonido: P.O.W, The Main Event, TMNT.
+- Mejoras de velocidad: Bubble Bobble, Contra, Ninja Kid 2, Psychic 5, Tehkan World Cup, The New Zealand Story, Tokio, Tumble Pop, Xybots.
+- Nuevo DAT clrmame.dat creado por [MaD] actualizado hasta el MAME GP2X 1.8.
+
+- Soporte para 32 nuevos romsets de MAME 0.35b2-b13 (total de juegos soportados 1115):
+  MAME 0.35b2: The Main Event (version F) (mainevt2) 
+  MAME 0.35b8: TNK3 (tnk3), ASO (Armored Scrum Object) (aso), Athena (athena), Fighting Golf (fitegolf), Guerrilla War (gwar),
+  Bermuda Triangle (bermudat), Psycho Soldier (set 1) (psychos), Psycho Soldier (set 2) (psychosa), Chopper I (chopper),
+  The Legend of Air Cavalry (legofair), TouchDown Fever (tdfever), TouchDown Fever (Japanese) (tdfeverj)
+  MAME 0.35b10: Legend of Makaj (lomakaj), P-47 (World) (p47), P-47 (Japan) (p47j), 64th Street (64street), Earth Defense Force (edf),
+  RodLand (Japan) (rodlandj), Avenging Spirit (avspirit)
+  MAME 0.35b11: Cabal (US set 1) (cabal), Cabal (US set 2) (cabal2), Cabal (bootleg) (cabalbl), Goindol (goindol), Homo (homo)
+  MAME 0.35b12:	Prehistoric Isle in 1930 (World) (prehisle), Prehistoric Isle in 1930 (US) (prehislu), Genshi-Tou 1930's (gensitou)
+  MAME 0.35b13: Sichuan II (hack?) (sichuan2), Shisensho - Joshiryo-Hen (Japan) (shisen), Truxton / Tatsujin (truxton), Out Zone (outzone)
+
+- Romsets modificados:
+  MAME 0.35b2: The Main Event (version Y) (mainevt)
+  MAME 0.35b8: Ikari Warriors (US) (ikari), Ikari Warriors (Japan) (ikarijp), Ikari Warriors (Japan bootleg) (ikarijpb), 
+  Victory Road (victroad), Dogou Souken (dogosoke)
+
+MAME GP2X 1.7 (23 de febrero de 2006)
+-------------------------------------
+
+- Añadido soporte para TV-Out. Gracias, Kounch, por la información.
+- Nueva opción para configurar la sincronización de video: Desactivado, Double Buffer y VSync.
+- Soporte para más velocidades de reloj de la GP2X: 133-300 MHz (sin parpadeos).
+- Corregido el control de volumen.
+- Algunas mejoras en el frontend.
+- Mejoras en el core DrZ80: Añadidas de nuevo las optimizaciones de Flubba sobre el último core de Reesy, entre otras cosas.
+
+MAME GP2X 1.6 (18 de febrero de 2006)
+-------------------------------------
+
+- Nueva opción para configurar la frecuencia de reloj de la consola GP2X desde el propio emulador. Gracias a Hermes PS2R por su
+  librería CpuCtrl.
+- Nueva opción para guardar las configuraciones de los juegos.
+- Nuevas versiones de los cores DrZ80 y Cyclone (más compatibles). Gracias a Reesy.
+- Corregido escalado de video por hardware en juegos de gran resolución (Spy Hunter, Paper Boy, Toobin, Super Sprint, etc).
+- Mejorado el sonido en juegos con frecuencia de video distinta de 60 Hz (Green Beret, Iron Horse, Juno First, Popeye, etc).
+- Añadido nuevo skin gráfico creado por Sike, dedicado al Warriors of Fate.
+
+MAME GP2X 1.5 (5 de febrero de 2006)
+------------------------------------
+
+- Implementado escalado de video por hardware (más rápido).
+- Actualización de pantalla ahora se realiza mediante single-video-buffer (más rápido).
+- Soporte para 20 nuevos romsets de MAME 0.35b3 (total de juegos soportados 1083):
+  Breywood (breywood), Cadillacs and Dinosaurs (World) (dino), Capcom World 2 (Japan) (cworld2j), Captain Silver (csilver), 
+  The Real Ghostbusters (3 player) (ghostb3), Gondomania (gondo), Last Mission (Rev 5) (lastmss2), Last Mission (Rev 6) (lastmiss), 
+  Mekyo Sensi (mekyosen), Muscle Bomber Duo (Japan) (mbomberj), Muscle Bomber Duo (World) (mbomber), Punisher (Japan) (punishrj), 
+  Punisher (World) (punisher), Quiz & Dragons (Japan) (qadj), Quiz & Dragons (US) (qad), Shackled (shackled), 
+  Slam Masters (World) (slammast), Super Real Darwin (srdarwin), Tenchi o Kurau 2 (Japan) (wofj), 
+  Warriors of Fate (World) (wof).
+- Soporte para 2 nuevos romsets de MAME 0.35b8: Tumble Pop (bootleg set 1) (tumblep) y Tumble Pop (bootleg set 2) (tumblep2).
+- Corregidos fallos gráficos en el Three Wonders (MAME 0.35b3 y MAME 0.35b6).
+- Corregida velocidad en el Psycho Nicks Oscar (MAME 0.35b3).
+- Añadido un skin gráfico creado por Sike.
+- Nuevo DAT clrmame.dat creado por [MaD] actualizado hasta el MAME GP2X 1.5.
+
+MAME GP2X 1.4 (23 de enero de 2006)
+-----------------------------------
+
+- Soporte para 24 nuevos romsets de MAME 0.35b1-b5 (total de juegos soportados 1061):
+  MAME 0.35b1: Rolling Thunder (rthunder), Pocket Gal (pcktgal), Pocket Gal (bootleg) (pcktgalb)
+  MAME 0.35b2: Ikari Warriors (US) (ikari), Ikari Warriors (Japan) (ikarijp), Ikari Warriors (Japan bootleg) (ikarijpb),
+  Victory Road (victroad), Dogo Soken (dogosoke)
+  MAME 0.35b3: Gals Panic (galpanic), Street Fighter (World) (sf1), Street Fighter (US) (sf1us), Street Fighter (Japan) (sf1jp)
+  MAME 0.35b4: Aero Fighters (aerofgt), Turbo Force (turbofrc), Pang (World) (pang), Pang (bootleg) (pangb), Buster Bros (US) (bbros),
+  Super Pang (World) (spang), Block Block (World) (block), Power Spikes (Korea) (pspikes)
+  MAME 0.35b5: Hellfire (hellfire), Zero Wing (zerowing), Vimana (set 1) (vimana), Vimana (set 2) (vimana2)
+- Corregidos problemas con paths relativos en algunas consolas (Thx wotan_999, bleim).
+- Corregido el problema que provocaba que no aparecieran correctamente los últimos juegos de la lista (Thx virucho28).
+- Nuevo DAT clrmame.dat creado por [MaD] actualizado hasta el MAME GP2X 1.3. Añade los nuevos juegos soportados en versiones anteriores,
+  y corrige los "NO ROM DUMP" en los juegos de Neo·Geo.
+- NOTAS: Para jugar al Super Pang MANTEN PULSADO START AL EJECUTARLO POR PRIMERA VEZ. El romset del Pang ha cambiado al del MAME 0.35b4.
+
+MAME GP2X 1.3 (8 de enero de 2006)
+----------------------------------
+
+- Mejoras en la compatibilidad del Cyclone.
+- Algunos fallos corregidos en los juegos de CPS-1 (modificaciones sacadas del MAME 0.35b2). Knights of the Round ya funciona OK,
+  el King of Dragons es jugable tras el primer nivel, se puede continuar la partida insertando más créditos, etc. Además hay algunos
+  nuevos juegos compatibles (ROMs del MAME 0.35b2): Final Fight (US) (ffightu), Street Fighter II (US rev A) (sf2a), 
+  Street Fighter II (US rev B) (sf2b), Street Fighter II (US rev E) (sf2e), Three Wonders (US) (3wonders), Wonder 3 (Japan) (3wonderj),
+  King of Dragons (Japan) (kodj), Captain Commando (US) (captcomu), Captain Commando (Japan) (captcomj), Knights of the Round (Japan) (knightsj), 
+  Street Fighter II' - Champion Edition (World) (sf2ce), Street Fighter II - Champion Edition (Japan) (sf2cej), Varth (Japan) (varthj), 
+  Street Fighter II' - Hyper Fighting (US) (sf2t), Street Fighter II Turbo (Japan) (sf2tj)
+- Controles configurables, opción para ajustar sensibilidad de controles analógicos y posibilidad de invertir los ejes X e Y.
+- Se puede disparar con los controles de volumen con la pantalla rotada.
+- El emulador ahora usa paths relativos, por lo que ya se puede colocar en cualquier lugar de la tarjeta SD.
+
+MAME GP2X 1.2 (2 de Enero de 2006)
+----------------------------------
+
+- Soporte para el romset completo del MAME 0.34 (1024 juegos). Entre los nuevos juegos soportados estan: Liquid Kids, Shadow Warriors, TMNT, etc.
+- Corregido el escalado / ajuste de pantalla en algunos juegos como Pang.
+- La lista de novedades de cada versión ahora esta disponible tanto en inglés como español (gracias kolakola).
+- Corregido el listado de juegos soportados (gamelist.txt).
+
+MAME GP2X 1.1 (28 de Diciembre de 2005)
+---------------------------------------
+
+- Más rápido.
+- Mejor calidad de sonido.
+- Mejor disposición de los controles.
+- Añade un nuevo ejecutable más compatible (tiene el antiguo y lento core en C original de M68000, probad con los juegos de System 16).
+
+MAME GP2X 1.0 (24 de Diciembre de 2005)
+---------------------------------------
+
+- Feliz navidad y llegada de nuevo año, jo jo jo ;-) .
+- Primera versión de mi port del MAME para la consola GP2X. Basado en el MAME 0.34, y portado directamente desde mi PORT previo del MAME para GP32.
+- 904 juegos son ahora soportados, la mayoría de todos los juegos soportados por la versión de MAME 0.34.
+- Recomiendo usar el programa "CPU & LCD Tunner" para realizar overclock a la GP2X, la mayoría de los juegos modernos son jugables a 250 Mhz.
+  Todavía no tengo integrado el overclock en el emulador.
+- El núcleo DrZ80 de Reesy ha sido modificado por Flubba para ser más rápido y sencillo de mantener.
+- El software de escalado / ajuste de la pantalla está basado en el código de Pepe_Faruk. La implementación por Hardware todavía no está hecha.

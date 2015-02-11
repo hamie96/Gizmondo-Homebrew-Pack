@@ -1,0 +1,75 @@
+LocknLoad 1.0: A small launcher app ( (c) sweetlilmre 05 November 2006)
+
+Usage:
+  LocknLoad [profilename]
+
+
+LocknLoad is basically a poor man's TULL :). I use this to get into and back out of full wince mode.
+Its probably of no use to anyone but me, but its free and comes with source :)s
+
+The supplied .ini file contains 2 sections to handle this: [WinceLaunch] and [GizLaunch]
+
+To use it as is, create a folder on your SD card called "wince".
+Copy LocknLoad.exe LocknLoad.ini and eCursor (and its associated files) into this directory and
+run LocknLoad from here. This will launch full wince with eCursor and the SIP.
+You have to have the SIP set up as per: 
+
+http://www.gizmondoforums.com/forums/index.php?s=&showtopic=8124&view=findpost&p=106375
+
+The ini file will create a shortcut on the wince desktop back to LocknLoad to run with the 
+"GizLaunch" profile as the command line. If executed, this will kill explorer and return you 
+to the default Giz menu.
+
+
+LocknLoad ini file entries:
+---------------------------
+
+[Settings]
+----------
+
+DefaultProfile  : the profile to launch if no command line is present
+ErrorIsFatal    : if an error occurs, all subsequent commands are aborted
+Log             : log errors to \LocknLoad.log
+
+
+Profiles:
+---------
+
+Entries         : number of entries in this profile
+1 - Entries     : action to perform for each entry
+
+e.g.
+
+[SomeProfile]
+Entries=2
+1=load:\SD Card\myapp1.exe
+2=load:\SD Card\myapp2.exe
+
+
+Entry commands:
+---------------
+
+load:
+kill:
+copy:
+scut:
+
+load: (load program)
+parameters:
+  program_name
+e.g. load:\SD Card\myapp1.exe
+
+kill: (kill all instances of program)
+parameters:
+  program_name
+e.g. kill:myapp1.exe
+
+copy: (copy x to y)
+  parameters:
+    source:destination
+e.g. copy:\SD Card\myapp1.exe:\windows\myapp1.exe
+
+scut: (create shortcut)
+  parameters:
+    shortcut_name:target
+e.g. scut:\windows\desktop\gizlaunch.lnk:"\SD Card\wince\LocknLoad.exe" GizLaunch

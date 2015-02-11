@@ -1,0 +1,7 @@
+PocketNester author(s):
+	* Rick Lei (http://jetech.org)
+
+PocketNester is based on nester, unofficial nester and nesterce:
+	* Darren Ranalli, author of nester (http://nester.dranalli.com/)
+	* TAKEDA toshiya, author of unofficial nester (http://www.emulation9.com/takeda/)
+	* Y.Nagamidori, author of nesterce 
