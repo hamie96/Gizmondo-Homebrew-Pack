@@ -1,0 +1,42 @@
+===============================================================================
+
+     SSSS    tt          lll  lll
+    SS  SS   tt           ll   ll
+    SS     tttttt  eeee   ll   ll   aaaa
+     SSSS    tt   ee  ee  ll   ll      aa
+        SS   tt   eeeeee  ll   ll   aaaaa  --  "An Atari 2600 VCS Emulator"
+    SS  SS   tt   ee      ll   ll  aa  aa
+     SSSS     ttt  eeeee llll llll  aaaaa
+
+===============================================================================
+                         To Do List - January 2007
+===============================================================================
+
+If you would like to contribute to Stella's development then find something
+on the list below and send email to Bradford Mott at bwmott@acm.org or
+Stephen Anthony at stephena@users.sourceforge.net.
+
+  * Find people to handle new ports, and try to more actively recruit people
+    into the Stella project
+
+  * Improve debugger support for cartridges with dedicated RAM, and add
+    source-level debugging
+
+  * Add support for uncommon controllers (KidVid, Lightgun, Amiga/ST mouse)
+
+  * Either Support DASM as frontend or integrate a 6507 Assembler
+
+  * Either Support Distella as frontend or integrate a 6507 Disassembler
+
+  * Add a Sprite/Animation Editor 
+
+  * Record and Playback games - not as real movie, but by logging
+    Input/RAM/processor states in given intervals.
+
+  * AVI/MPEG export
+
+  * Add a PF Editor
+
+  * Client/Server networked play for up to 4 Computers via LAN/Internet
+
+  * Tracking Hiscores
