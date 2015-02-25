@@ -1,0 +1,13 @@
+Keys settings, Grodo alpha2
+
+LTrig - VKeyboard
+RTrig - Settings
+Home  - Stats
+Left, Right, Up, Down, Play, forward - Left, Right, Up, Down, Fire, space
+
+Keymapping is now available.
+On first run a grodogiz.keys file will be created in the executable folder.
+Read the contained instructions for creating your own keymaps.
+
+-sweetlilmre
+27 July 2006
