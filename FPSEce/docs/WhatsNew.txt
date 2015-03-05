@@ -1,0 +1,132 @@
+0.09.5 -> 0.09.6
+
+* Changed virtual memory allocation method.
+* Fixed a bug into screenshot function.
+* Added support for Nero Burning Rom image file (*.NRG)
+* Removed XA skip function, it caused bugs and slowdowns.
+* Added VGA and linear frame buffer support.
+* Several fixes for a clean/smaller code in the GUI.
+* Added support for GDI graphic driver.
+* Threaded execution and completely rewritten the WinCE code.
+* Touch pad emulation is now configurable (STICKY or PUSH mode).
+* Sound volume level is saved at the end of an emulation session.
+* Onscreen buttons feature the directional keys.
+
+0.09.4 -> 0.09.5
+
+* Fixed lot of "bugs" that caused memory allocation errors on WM2003 SE.
+* Fixed compatibility with UNICODE devices.
+* Fixed some display bugs into the virtual gamepad.
+* Fixed a bug in movies decoding when B/W output is selected.
+* Fixed a bug with sound cache buffers.
+* Now FPSE is compiled only with Microsoft Libraries except few speed
+  critical functions.
+* There is just one executable for all CPU and all WinCE platforms (I hope).
+  Select your ARM version into the main menu:
+	Options->Cpu type->ARM V4    (or ARM V5)
+  FPSE has been tested with WM2003 and WM2003SE. I don't know what it will
+  happen with WM2002 and older: try it, perhaps it will work.
+* Started support for LFB feature on VGA models (not working yet).
+* Removed the old file selector. The new rountine is faster, it virtually
+  doesn't use memory (the previous one used more than 1MB or ram!!!) and
+  it's much more colorful ^_^.
+  It's also coded for being resolution-independent, so it should run fine
+  in VGA mode too in the future.
+* The libraries LibZ and LIBBZip2 are now compiled as DLL.
+  This will be an advantage because:
+  - It uses less memory.
+  - We can change them easily without recompiling the emulator, if one day
+    a newer version of those libraries will come out.
+* A new automatic frameskip function has been implemented.
+  You can see frame skip as a function for running FPSE at least to an 
+  FPS value. Here you are what these levels do:
+
+  Level 0: no frames skipped.
+  Level 1: try to run the emu at least to 10 fps.
+  Level 2: try to run the emu at least to 15 fps.
+  Level 3: try to run the emu at least to 20 fps.
+  Level 4: try to run the emu at least to 25 fps.
+  Level 5: try to run the emu at least to 30 fps.
+  Level 6: try to run the emu at least to 35 fps.
+  Level 7: try to run the emu at least to 40 fps.
+  Level 8: try to run the emu at least to 45 fps.
+  Level 9: try to run the emu at least to 50 fps.
+
+  Example: your game runs to 17 fps without frameskip.
+  Level 1 and level 2 don't change the speed.
+  If you select Level 3, the emulator will skip some frames and it will
+  try to run the game at least to 20 fps.
+  If you select higher levels, it will skip more frames for getting at 
+  least the requested speed. Of course, if the emu skips more, the game
+  will be more more unplayable because an "slideshow" effect.
+  If during the game there are some points where fps value overcome the
+  minimum value of requested level, then no frames are skipped.
+  Again, let's suppose that you are at level 2 and you have improved the
+  speed from 17 fps to 20 fps.
+  If there are some point where the game overcome the 20 fps, then no frame
+  skips are done for those points.
+* Some small speed improvements with compiled memory functions.
+* Sound playback is much smoother now.
+
+0.09.3 -> 0.09.4
+
+* Many, Many bug fix done by LDChen, now emu is extremely stable
+* A significant boost done by some optimisations 
+* GPU color palette bug fixed
+* A new hidden option to make game like MGS running, but Sound emulation
+  is broken and should be set to off when you active this option 
+  (SpuIRQ=on in FPSE section of FPSE.INI) (Notice, we plan to release soon
+  FpseCE 0.09.5 on which we will work on memory block allocation error 
+  which occur on some PocketPC WM2003 (If current version don't work for
+  you, take a look on syslog.txt, and try none compressed ISO... until 
+  next version....) 
+
+0.09.2 -> 0.09.3
+
+* Switched to GCC because it generates faster and smaller code than
+  Microsoft C compiler or Intel High performance (bleah!) compiler.
+* Many optimisation in code
+* Sound is implemented, it's not 100% but work well in most of case 
+* GPU texture windows, GFX are lot better now
+* Guncon support, emulated by your stylus!
+* 3 Frameskip level with 2 frameskip mode is available 
+* Change disc support for Multiple dics games
+
+0.09.1 -> 0.09.2
+
+* Compatible with IPAQ 38xx
+* GPU texture fix (MGS and others game)
+* Some Dynamic Recompiler CPU instruction FIX and Speedup
+* ZNX support
+* Added support for missing memory card formats
+
+0.09 -> 0.09.1
+
+* Improved the compilation of some MIPS opcodes. This should give you a
+  little more speed. (LDChen)
+* Fixed a bug in shifting opcodes. Now several games (WipeOut 3, FIFA soccer
+  games and others) are fully playable. (LDChen).
+* Completely rewritten the blitting routines for displaying graphics.
+  Stretching, landscape left/right and portrait modes are implemented. (LDChen)
+* Improved movies playback speed. A new, faster IDCT routine optimized
+  for ARM is used and some optimizations had been added to YUV to RGB 
+  conversions. (LDChen).
+* Fixed some GTE bugs. (LDChen)
+* Fixed some bugs in rootcounter emulation. Now more games are playable.
+  I tested "Ridge Racer revolution", but I think there are others. (LDChen)
+* Fixed some bugs in GPU dma command. (LDChen)
+* Implemented a basic frame-skipping algorithm. Note: while playing movies,
+  frames are not skipped, only during 3D graphic processing. (LDChen)
+* Added support for some missing memory card formats available in the main
+  FPSE core, but not implemented in the previous FPSEce version (SchTruck)
+* Added Frameskip support. (Schtruck)
+* Added Landscape left, right and Portrait mode support. (Schtruck)
+* Added Better Gapi support, should work for all PocketPC ARM based now.
+  (Schtruck)
+* Minor Fixes in GUI and system check for better compatibility. (Schtruck)
+* Added config save support. (Schtruck)
+* Added onscreen button mapping support and configuration. (Schtruck)
+* Improved FPS counter, it's OK now... (Schtruck)
+
+0.09
+First release.
