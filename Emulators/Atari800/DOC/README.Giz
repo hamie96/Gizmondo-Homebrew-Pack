@@ -1,0 +1,447 @@
+Atari800 emulator GP32/GP2X/Gizmondo port!
+---------------------------
+
+Original source: atari800.sourceforge.net
+See CREDITS for the authors of the emulator <- _many_ thanks to them
+Port by: Mark Watson (gp32a800@foft.fsnet.co.uk)
+Port version: 1.2
+Atari800 version:
+This is mostly version 2.0.1, but has sound from 1.2.2, some cvs stuff and some of my own patches! Basically a mixture that seems to work quite well on GP32X.
+
+Some help was also given by kind GP32X devrs:
+gp32_fileio   - Taken from GP32 version of devkitadvance -> so I presume Christian Nowak
+gpsoundbuf    - Thanks to Christian Nowak (and some kind soul on irc who pointed this code out -> I forget who:-( )
+gdb-stub      - Thanks to Mithris
+news          - Thanks to Rattboi (posted on gp32emu.com)
+tech info     - Thanks to Spiv for LCD DMA descriptions and other low level stuff
+multifirmware - Thanks to Spiv and individual firmware devs (esp PacMan for PacRom)
+deverge@emi.u-bordeaux.fr - For the Debian packaged build environment. Very nice.
+LCD regs      - Thanks again to Spiv for explaining why my fix in 0.3 worked:-)
+Chatboard     - Thanks to Nigel Brown for building it
+Chatboard drv - Thanks to Mr Spiv for the "example" chatboard driver
+gcc building  - Thanks to Rob@Cobbleware for the docs on building a gcc toolchain
+New 5200 menu - Thanks to Belgarath for sending me a fixed 5200 menu last year sometime!
+syscalls      - Thanks to Mr Spiv for mentioning syscalls.c in various forum posts! libc is much more stable now...
+splash/icon   - Many thanks to Antiriad for the fantastic icon
+compiler help - Thanks to DJWillis for improving my toolchain! Help with building gcc and info on which flags I did/didn't need in Makefile.
+gp2x flashing - Thanks to DJWillis for the offer of help in my time of dire need (and fixing my GP2X:-))
+gp2x load     - Thanks to Matt Hayhurst for the loan of the GP2x
+minimal lib   - Thanks to Rlyeh for the minimal lib. Now using a hacked up version! Many thanks. Then to HH and beyond!
+5200 control  - Thanks to DaveC for the suggestions on 16-way input and acceleration. Seems to work quite well, but you need to map keys for most games. I still need an editor!
+beta testing  - Thanks to Greenchilli, Sascha, DaveC and Troy for much feedback. 
+
+Changes:
+-------------
+0.1 
+	First release in theory -> only went to a select few on IRC
+
+0.2 
+	Fixed sound bug
+	Added reset/reboot back to the emu menu
+
+0.3 
+	Added option on R key in default.men
+	Added option to B menu in default.men
+	Fixed screen drifting problems
+
+0.4
+	Fixed screen drifting problems properly -> tum tee tum!
+	Added seperator into menu
+	Auto Frame skip can be disabled (needed for Mountain King because of collision detection bug). 
+	GTIA/CTIA artifacting switched (as in 1.3.0...)
+	Artifacting stored in save state
+	Joystick 0/1 can be mapped (Needed for several pinball games (see nightmis.men and dave.men))
+	Default.men now has lower case keys (Still no decent keyboard entry though)
+
+0.4a
+	Fixed arrow keys for Rescue on Fracalus
+
+0.5
+	Built with GCC 3.4 -> might be quicker. At any rate its smaller!
+	Chatboard support (basic, not configurable via menu yet)
+	Fixed a timing issue (sound used to go fast after returning from menu etc.)
+
+0.6
+	Merged with atari800 v1.3.2 source
+	Built various speeds
+	Added build with cycle exact emulation (slow but good...)
+	Fixed 130XE bank switching
+	Added virtual keyboard
+	Fixed ATZ, DCM support
+	Savestates are gzipped (slowish, no option to disable yet)
+	PCX files are stored in the state dir, rather than root
+	Savestate filename can be typed
+	Savestate filename can be based on current menu or first disk
+	Added extra chatboard keys
+	Used proper libc port - wrote (another?) syscall.c in terms of gp sdk
+
+0.7
+	Splashscreen by Antiriad
+	Clock speed selection
+	Switched to better compiler build/flags (10% faster ish)
+	Fast forward support (hold left shoulder in default/5200 menu)
+	State file management (startup in state, rename, delete)
+	Restructured menu a bit
+	Fixed a few bugs...
+
+gp2xprerelease 1:
+	Plain and simple port to GP2X using SDL
+	Not quite as good in several ways as GP32 version...
+	I plan to do a better one, but this will get people up and running
+	Installation is similar to GP32 version. Just no fxe. The program is a .gpe file and there is no point in the non-exact version. All the usual dirs go under /mnt/sd/ (e.g. /mnt/sd/gpmm/a800) 
+	COMPLETELY UNTESTED - I broke my GP2X by installing dodgy libs
+	Didn't work!
+
+gp2xprerelease 2:
+	Sound sucks, but I fixed the problem - SDL_SetVideoMode(SDL_HWSURFACE|SDL_DBLBUFFER) or similar was failing.
+
+gp2xprerelease 3:
+	Started using Rlyeh's minimal lib. Now working nicely. Soon to ready for GP2X v0.1!
+
+0.8
+	Merged GP2X and GP32 versions (mostly)
+	Added ZIP file support
+	GP2X:Added clock speed change
+	GP2X:Fixed crash when displaying onscreen keyboard
+	GP2X:config now go in /mnt/sd/roms/a800 (i.e. move it from gpmm/a800 to roms/a800)
+	GP2X:Switched to 8-bit mode
+	GP2X:Added X and Y buttons
+	GP2X:Stereo works (thanks to Rlyeh again)
+
+0.9 
+	Bumped emulator core to 2.0.1
+	Moved CPU clock speed into external script, seems to differ depending on peoples LCD prefs etc.
+	I included cpu_speed_light, cpu_speed built with dietlibc and an example script
+	Added 16-way input and simple speed control for 5200
+	Added default menus for people who put the config in the wrong place!
+	Now uses proper atari800 config file, so things can go anywhere. I included an example.
+	Still accesses /tmp (booo), but I included the Linux ramdisk module. I recommended mounting /tmp on that. 
+	Lots of other things I've forgotten
+	Broke my GP32 version again:-(
+
+1.0
+	Fixed savestates (You can't load 0.9 ones since they were broken, delete them)
+	Added 16-bit HiFi Pokey (Off by default, slow in some programs)
+	Config file is now atari800.cfg (not .atari800.cfg) and autogenerates better
+	Fixed 5200 controls in default.men
+	5200 digital controls mode
+	Improved palette
+	Improved timing
+	Fixed NTSC sound
+
+1.1
+	No idea
+
+1.2
+	Some dpad fixes
+
+How to get it working on Gizmondo
+---------------------------------
+Copy Atari800 folder onto SD card
+Copy rom files into the folder
+(Update atari800.cfg with rom paths if the names are not usual)
+Copy atr files etc. into the ATR folder
+Run Atari800.exe
+
+Controls: All can be remapped using menu scheme as on GP2X/GP32.
+By default in game:
+
+Set volume: Volume+Up on dpad/Volume+Down on dpad
+Joystick1: dpad
+Fire: <<
+UI: home key
+Fast forward: Left shoulder (hold...)
+Start: Asterisk
+Select: Triangle
+Option: Power
+Reboot: Power+L+R (Only one of L or R for reset instead)
+Simple KB: Hold >>
+On screen keyboard: Press R+L together
+
+In ui:
+L or Home: Back to emulator/escape
+<< select
+dpad: up/down
+On screen keyboard: Press R+L together
+
+Rubbish instructions - message me on the forum if you have questions or better e-mail me...
+
+How to get it working on GP2X
+-----------------------------
+
+Requirements:
+GP2X
+The emulator (atari800.gpe)
+Menu file (default.men - Explanation of what this is below...) 
+OS ROMs (atarixl.rom, atariosa.rom, atariosb.rom, 5200.rom, ataribas.rom -> filenames must be as shown here)
+Some software: e.g.
+	Disk images .ATR, .XFD
+	Cassette images (.CAS)
+	Cartridge images (.BIN)
+	Executable files (.XEX)
+
+Easiest install
+	copy the roms folder into the sd card root (See GP32 section for where to put own ATRs etc.) 
+	copy the atari800.gpe into the sd card root	
+
+You can do much clever stuff by passing it parameters and/or tweaking atari800.cfg
+
+/*How to get it running on GP32
+-----------------------------
+
+Requirements:
+GP32
+Free Launcher (or alternative firmware that can load FXE files)
+The emulator (Atari800.fxe)
+Menu file (default.men - Explanation of what this is below...) 
+OS ROMs (atarixl.rom, atariosa.rom, atariosb.rom, 5200.rom, ataribas.rom -> filenames must be as shown here)
+Some software: e.g.
+	Disk images .ATR, .XFD
+	Cassette images (.CAS)
+	Cartridge images (.BIN)
+	Executable files (.XEX)
+
+To install automatically -> download and install the fpk...
+
+To install manually -> using your favourite SmartMedia access method (gplink, usb card reader etc):
+NOTE: Some people reported certain Windows based card readers corrupt the files. So the keyboard mapping no longer works...
+
+copy gpmm\a800*.fxe into \gpmm
+
+create dir \gpmm\a800
+
+create dir \gpmm\a800\os 
+copy os roms into this dir
+
+create dir \gpmm\a800\disk
+copy atr files into this dir
+
+create dir \gpmm\a800\rom
+copy cartridge images into this dir
+
+create dir \gpmm\a800\exe
+copy tape images and executables (xex) into this dir
+
+create dir \gpmm\a800\state
+This is for state saves -> note that the saves from other builds are currently incompatible. I may fix that, but will break current format...
+
+create dir \gpmm\a800\menu
+This is for the keyboard mapping (see later for how to create custom ones)
+Copy gpmm/a800/menu/default.men into here
+
+Run A800[e|l].FXE where e is cycle exact, l is standard. Standard starts in 132MHz by default and cycle exact in 165MHz by default. 
+*/
+
+Usage
+-----
+
+On startup you are presented with the emulator "ui" menu. Options should be self-explanatory, but I'll at least tell you the controls:
+Joypad -> up/down
+A -> select
+B -> backspace
+L shoulder -> escape, enter menu
+R shoulder -> tab in menu
+SELECT -> space
+L,R -> virtual keyboard
+(These can now be redefined in ui.men -> see below for menus)
+
+To get started select run atari program. From the file selector choose an ATR file. Then hit escape twice to go to the emulator proper.
+
+You can return to this ui menu at any point by holding start, select, A, B, L and R for two seconds! There are easier ways, but that one will always work. The others can be redefined. Most menus define it as left shoulder.
+
+Keyboard
+--------
+
+Obviously the GP32 does not have a keyboard (unless you have a chatboard). So each key can be mapped to a special input method.
+By default (using that default.men) the keys work as follows:
+Joypad -> joystick
+A -> fire
+B -> menu with most keys -> navigate with joystick -> presses key when you release
+Select -> select
+Start -> start
+R -> option
+L,R,START,SELECT held -> reboot
+L,R,START held -> reset
+L,R,SELECT held -> reset
+L -> ui menu
+L,R -> virtual keyboard
+X -> 5200 menu
+Y -> 5200 accel, Tab in menu
+
+To have a more custom setup you need to write a menu (.men) file and put it in \roms\a800\menu\  (point the cfg file at them, can change in emulator cfg)
+
+There is an example of this for Star Raiders (starraid.men). This does the following:
+R -> Toggle through views
+B -> Hold and use up/down on joypad to change speed
+SELECT -> Press for menu for other, less common, actions
+
+Keyboard map files are loaded from the ui screen.
+
+Chatboard (GP32)
+---------
+
+This is not configurable yet. I've tried to map keys onto the chatboard ones where possible. e.g. " is shift G.
+
+Notable exceptions
+<- is delete
+> is enter
+shift q is escape
+shift e is equals
+shift t is tab
+shift a is atari
+shift h is help
+shift k is left bracket
+shift l is right bracket
+shift c is caps
+shift v is caret (^)
+shift n is less
+shift m is greater
+< is control
+
+You need to press SMS before typing anything. I'm not sure if this is necessary, since its mostly a copy of Mr Spiv's driver ATM. I plan to work it out at some point!
+
+Writing custom keyboard map files
+---------------------------------
+IMPORTANT NOTE -> use Unix style carriage returns! (0.6 - I think this is fixed now, but untested)
+
+Each input definition is on a single line. 
+If you want comments begin the line with #.
+Each input definition is formatted as a number of colon seperated tokens:
+TOKEN:TOKEN:TOKEN:TOKEN
+There are several types of input mapping. The format is:
+Type:Driver:?????? (where ?????? is more tokens that are processed by the input mapping type)
+
+$driver is a GP32 key definition. Multiple keys can be used by seperating them with |.
+e.g. A, B, R, L, SELECT, START, A|B, A|START, R|L|A|B
+
+$key is an atari key definition (or action, such as the UI menu)
+e.g. A,B,C,a,b,c,1,2,3,START,SELECT,SHIFT,NONE,REBOOT,UI
+
+For a complete list look in menu\menu_akeymenu.cpp
+
+Key down:
+D:$driver:$key
+e.g. D:A:SELECT -> when you press A on GP32 the Atari sees SELECT
+
+Key up:
+U:$driver:$key
+e.g. U:A:SELECT -> when you stop pressing A on GP32 the Atari sees SELECT (temporarily)
+
+Key(s) held
+H:$driver:$key:$frames
+e.g. H:A|B:RESET:100 -> hold A and B on the GP32 for 2 seconds (100 frames) to make Atari RESET
+
+Key toggle
+T:$driver:$key:$key:$key:...
+e.g. T:R:1:2:3:4:5:6:7 -> each time you press R on the GP32 the Atari gets a different key -> cycles through the list
+
+Key slider
+S:$driver:$key:$key:$key:...
+e.g. S:R:1:2:3:4:5:6:7 -> hold down R on the GP32 -> you can see the list of keys on the left. Now use joypad to adjust key pressed. 
+
+Virtual keyboard
+K:$driver:$pressKey:$quickExitKey:$backspaceKey:$returnKey:$cursorKey:$shiftKey
+Usage:
+Press the driver key to bring it up. Then you move around with the cursor keys and use $pressKey to press a key! Press <Exit> to quit the keyboard. Shift can be pressed one off by clicking left shift then the key. Or locked by clicking right shift, then as many keys as you want. Control is always locked.
+This was a bit of a pain to use, so I added a few helper keys:
+quickExit -> press these GP32 keys to quit the keyboard
+backspaceKey -> press these GP32 keys to type backspace
+returnKey -> press these GP32 keys to type return
+cursorKey -> Hold this down, then you can move the cursor with the joystick (try it in basic)
+shiftKey -> Hold down when you want to use shift.
+e.g.
+K:L|R:A:L|R:B:START:SELECT:R
+Hold shoulders to bring up keyboard. Press a type type. Press shoulders to quit keyboard. Press b to delete. Press start for enter. Hold select to move cursor. Press R for shift.
+
+Key menu
+M:$driver:$flags:$name:$key:$flags:$name:$key....
+This one is a bit more complex! It displays a multi-level menu with textual names for the keys. To navigate the menu use the joypad.
+
+The flags are a combination of:
+D -> default menu item on this level -> when this menu is displayed this item will be selected
+R -> new submenu -> Right
+L -> end submenu -> Left
+
+Simple example (again this should be on one line):
+ :Item1:1
+ :Item2:2
+ :Item3:3
+ :Seperator:NONE
+ :Item4:4
+ :Item5:5
+
+More complex example (with a submenu):
+ :Item1:1
+ :Submenu1:NONE
+R:SubMenuItem1:1
+ :SubMenuitem2:2
+ :SubMenuItem3:3
+L:Item2:2
+ :Seperator:NONE
+ :Item3:3
+
+And finally the keyboard one in default.men (see) why I think I need an editor?!:
+M:B: :A-I:NONE:R:ABC:NONE:R:A:A:D:B:B: :C:C:LD:DEF:NONE:R:D:D:D:E:E: :F:F:L:GHI:NONE:R:G:G:D:H:H: :I:I:LLD:J-R:NONE:R:JKL:NONE:R:J:J:D:K:K: :L:L:LD:MNO:NONE:R:M:M:D:N:N: :O:O:L:PQR:NONE:R:P:P:D:Q:Q: :R:R:LL:S-Z:NONE:R:STU:NONE:R:S:S:D:T:T: :U:U:LD:VWX:NONE:R:V:V:D:W:W: :X:X:L:YZ:NONE:R:Y:Y:D:Z:Z:LL:0-9:NONE:R:0-3:NONE:R:0:0:D:1:1: :2:2: :3:3:L:4-6:NONE:R:4:4:D:5:5: :6:6:L:7-9:NONE:R:7:7:D:8:8: :9:9:LL:Shift:SHIFT: :Space:SPACE: :Tab:TAB: :Return:RETURN: :-----:NONE: :Reset:RESET: :Reboot:REBOOT
+
+With interesting parts commented and formatted to be (possibly!) understandable!:
+M:B: // Menu when pressing B
+ :A-I:NONE: // First item -> just a way to get to the submenu...
+	R:ABC:NONE: // Start submenu -> just a way to get to next submenu!
+		R:A:A:
+		D:B:B: // Default to key in middle
+		 :C:C:
+	LD:DEF:NONE: // Back to submenu -> and make this the default in this submenu
+		R:D:D:
+		D:E:E:
+		 :F:F:
+	L:GHI:NONE:
+		R:G:G:
+		D:H:H:
+		 :I:I:
+LLD:J-R:NONE: // Note L is used twice to go back two levels to the left -> back to main menu
+	R:JKL:NONE:
+		R:J:J:
+		D:K:K:
+		 :L:L:
+	LD:MNO:NONE:
+		R:M:M:
+		D:N:N:
+		 :O:O:
+	L:PQR:NONE:
+		R:P:P:
+		D:Q:Q:
+		 :R:R:
+LL:S-Z:NONE:
+	R:STU:NONE:
+		R:S:S:
+		D:T:T:
+		 :U:U:
+	LD:VWX:NONE:
+		R:V:V:
+		D:W:W:
+		 :X:X:
+	L:YZ:NONE:
+		R:Y:Y:
+		D:Z:Z:
+LL:0-9:NONE:
+	R:0-3:NONE:
+		R:0:0:
+		D:1:1:
+		 :2:2:
+		 :3:3:
+	L:4-6:NONE:
+		R:4:4:
+		D:5:5:
+		 :6:6:
+	L:7-9:NONE:
+		R:7:7:
+		D:8:8:
+		 :9:9:
+LL:Shift:SHIFT:
+ :Space:SPACE:
+ :Tab:TAB:
+ :Return:RETURN:
+ :-----:NONE: // Seperator
+ :Reset:RESET:
+ :Reboot:REBOOT
+

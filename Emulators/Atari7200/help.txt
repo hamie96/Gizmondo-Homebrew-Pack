@@ -1,0 +1,83 @@
+INTRODUCTION
+------------
+
+ProSystem is one of the best Atari 7800 emulators for 
+Windows.
+
+ProSystem was written by Greg Stanton.
+(see http://home.comcast.net/~gscottstanton/) 
+
+ZX81 did a port to the PSP and the GP2X.
+(http://zx81.zx81.free.fr/serendipity/)
+
+This is foft's quick/dirty port to Gizmondo.
+(giz7800@foft.fsnet.co.uk)
+
+Credits:
+i) Thanks for Greg Stanton for ProSystem itself.
+ii) Thanks to ZX81 for the menus/SDL port.
+iii) Thanks to Reesy for the sound buffer code.
+iv) Thanks to WinCESoft for Gizmondo GAPI.
+v) Greetings to TheReaperUK, Critical and gambler172.
+
+CONTROL
+------------
+
+In the ATARI emulator window 
+
+Only one keyboard mapping, but this can still be 
+redefined. Since the Gizmondo has more buttons than 
+the 7800 though this is unlikely to need doing... 
+Also no onscreen keyboard for similar reasons (it was
+SDL and more effort to replace + not much use for 
+7800 imho...)
+
+Giz           Atari 7800               
+
+Stop/Rewind   Fire 1
+Play/Fforward Fire 2
+Left trigger  Left difficulty (rare, some cheats...)
+Right trigger Right difficulty (similarly)
+Home          Go to menu
+Vol+Up/Down   Adjust volume
+Asterisk      Pause
+Triangle      Select
+Power         Reset
+
+In the menus
+
+Fforward      Go forward or select
+Rewind        Go backward or select
+Play          Select
+Stop          Cancel (+ some confirmation dialogs)
+Home          Exit menu/sub menu
+Power         Reset emu/delete files
+
+LOADING ROM FILES (A78)
+------------
+
+Put them in the roms folder under the emulator 
+directory. They can either be .a78 files or .zip 
+files containing one .78 file.
+
+Then, while inside the emulator, press HOME to 
+go to the main menu. From there choose "Load ROM" 
+and select the cartridge from the file selector. 
+Press HOME to return to the emulator to play.
+
+Most games run fast enough - frameskip is 
+automatic, but only tends to be used on heavier 
+games. Unfortunately some are still too slow (E.g. 
+Mario Brothers). I do not plan to optimise ProSystem, 
+but if someone comes up with a better way of 
+displaying palette 8-bit screens on the Gizmondo
+I'll fix that at least.
+
+Source is GPL. I'll put it on my website 
+(www.scrameta.net).
+My port is a mess, so don't base other ports on this!
+
+Thanks,
+
+foft
+
