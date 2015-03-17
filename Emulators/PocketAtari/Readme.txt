@@ -32,3 +32,7 @@ April 8, 2006.
 E-mail: pstehlik@sophics.cz
 
 Project homepage: http://atari800.sourceforge.net/
+
+Port Maintained by hamie96 version 2.0.2alpha1
+
+any questions contact me at hamie96@gmail.com
