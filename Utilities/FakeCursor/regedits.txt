@@ -1,0 +1,6 @@
+HKLM\Software\Microsoft\Shell\Rai\:MSNOTES
+
+Rename 1 to 1old
+make a new string.
+add:
+CommManager.exe
