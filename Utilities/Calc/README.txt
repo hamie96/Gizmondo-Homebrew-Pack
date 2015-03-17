@@ -71,3 +71,6 @@ this release is contained in the file Release.htm.
 
 For further information about Calc98 visit our website at 
 http://www.calculator.org/.
+
+
+NOTE: In ordeer to use Calc for Gizmondo, unzip any non-duplicate files from the .zip folder and place them in the Calc folder on your root sd card.
