@@ -1,0 +1,80 @@
+
+REminiscence README
+Release version: 0.1.4 (Apr 2 2005)
+-------------------------------------------------------------------------------
+
+About:
+------
+
+REminiscence is a re-implementation of the engine used in the game Flashback
+made by Delphine Software and released in 1992. More informations about the
+game can found on mobygames [1] and also here [2].
+
+Please be aware that, currently, this implementation is not yet complete.
+
+Supported Versions:
+-------------------
+
+Currently, only the PC DOS version is supported. French and English have been
+tested successfully.
+
+Compiling:
+----------
+
+Tweak the Makefile if needed and type make (only gcc3 has been tested so far).
+The SDL and zlib libraries are required.
+
+Running:
+--------
+
+You will need the original files, here is the required list :
+	FB_TXT.FNT
+	GLOBAL.ICN
+	GLOBAL.FIB
+	GLOBAL.SPC
+	*.OFF
+	*.SPR
+	*.MAP
+	*.PAL
+	*.ANI
+	*.CT
+	*.MBK
+	*.OBJ
+	*.PGE
+	*.RP
+	*.TBN
+	*.CMD
+	*.POL
+	*CINE.*
+	
+To start the game, you can either :
+- put the game's datafiles in the same directory as the executable
+- use the --datapath command line option to specify the datafiles directory
+
+Here are the various in game hotkeys :
+    Arrow Keys      move Conrad
+    Enter           use the current inventory object 
+    Shift           talk / use / run / shoot
+    Backspace       display the inventory
+    Alt Enter       toggle windowed/fullscreen mode
+    Alt + and -     change video scaler
+    Ctrl S          save game state
+    Ctrl L          load game state
+    Ctrl + and -    change game state slot
+
+Credits:
+--------
+
+Delphine Software, obviously, for making another great game.
+Yaz0r, Pixel and gawd for sharing some informations they gathered on the game.
+
+Contact:
+--------
+
+Gregory Montoir, cyx@users.sourceforge.net
+
+URLs:
+-----
+
+[1] http://www.mobygames.com/game/sheet/p,2/gameId,555/
+[2] http://ramal.free.fr/fb_en.htm

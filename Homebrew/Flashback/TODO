@@ -1,0 +1,9 @@
+
+TODO
+  - code cleanup
+    * better localisation code
+    * cleanup the mixer/sound/mod_player mess
+    * split Game class
+  - add support for other PC versions (german, spanish...)
+  - add support for MIDI music
+  - input recording
