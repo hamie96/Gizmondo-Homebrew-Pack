@@ -20,5 +20,8 @@ Entering Windows CE on your Gizmondo
 2. run autorun.exe in Games Directory
 
 
+Backup download links can be found at: http://web.archive.org/web/*/http://gizmondo.stu.ac/TTA/*
+
+
 
 If you have any questions, please contact me at hamie96@gmail.com
