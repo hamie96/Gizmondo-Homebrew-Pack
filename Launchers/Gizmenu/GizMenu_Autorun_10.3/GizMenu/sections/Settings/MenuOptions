@@ -1,0 +1,4 @@
+title=Menu Options
+icon=skin:icons/configure.png
+exec=!MENUOPT
+description=Configure GizMenu's options

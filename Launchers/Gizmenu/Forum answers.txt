@@ -1,0 +1,11 @@
+1. Does it matter where I copy the files to (eg. if I want DrMD, do I have copy it into the emulators folder etc?)
+1)No. Except for GZGA folders which must go in root
+
+2. What file structure should I use when I copy files across? (eg, so I have emulators/DrMD and games/chicane/gzga... etc)
+2)It doesn't matter, Gizmenu scans the folders and creates launchers for all the exe files. You can then move the launcher to a new section either in windows explorer or on the Giz (maybe through the brightness key?)
+
+3. Autoruns - do they need to be renamed? (before I came across the star button info, I had copied DrMD across into **emulators/DrMD and had an autorun in the DrMD folder, and one in the emulators folder - the adding programs command found them both, but neither ran)
+3)No, you dont need autoruns (i.e fireflys or zektors laucher). But the program's themselves dont matter if they are renamed or not. It helps if they are called the name of the program because otherwise the laucher will be called 'autorun' not 'DrMD' or whatever and will have to be renamed manually
+
+4. Is there anything else I might need to know to use it?
+4)Probably, but nothing i can think of immediately 

@@ -1,0 +1,179 @@
+[Skin Info]
+Author=MmmRevo
+AuthorEmail=
+Name=French
+HiRes=FALSE
+Notes=en français!
+PleaseWait=loading2.png
+
+[Button Images]
+Start Menu Normal=start_normal2.png
+Start Menu Pressed=start_pressed2.png
+Close Normal=close3.png
+Close Pressed=close_pressed2.png
+OK Normal=ok3.png
+OK Pressed=ok_pressed2.png
+Notify Normal=notify2.png
+Volume Normal=volume2.png
+Mute Normal=mute2.png
+Battery/Memory Normal=battery2.png
+Home Normal=home2.png
+Menu Normal=menu2.png
+Connection Normal=connect2.png
+Disconnect Normal=disconnect2.png
+Signal Strength Normal=signal2.png
+Signal Connected Normal=phone2.png
+Signal Strength Custom=TRUE
+Battery/Memory Custom=TRUE
+
+[Topbar]
+Portrait=title2.png
+Landscape=title2.png
+Mode=Scaled
+Left Color=0
+Right Color=0
+Solid Color=0
+Use Theme Colors=FALSE
+Left Margin=0
+Right Margin=2
+
+[Today Menubar]
+Portrait=today_portrait2.png
+Landscape=today_landscape2.png
+Display New Text=FALSE
+Name=Frutiger Linotype
+Color=0
+Size=7
+Shadow=0
+Style=Bold
+Mode=Scaled
+Left Color=0
+Right Color=0
+Solid Color=0
+Use Theme Colors=FALSE
+
+[Menubar]
+Portrait=softkey2.png
+Landscape=softkey2.png
+Normal=menu_normal2.png
+Pressed=menu_pressed2.png
+Disabled=menu_disabled2.png
+Name=Frutiger Linotype
+Color=0xffffff
+Pressed Color=0xffffff
+Size=7
+Shadow=0
+Style=Bold
+Mode=Scaled
+Left Color=
+Right Color=
+Solid Color=
+Use Theme Colors=False
+
+[Volume Bubble]
+Image=volumebubble2.png
+
+[Start Menu Skin]
+Desktop Icon=desktop2.tga
+Program Group=programs2.tga
+Settings Group=settings2.tga
+Find Icon=find2.tga
+Help Icon=help2.tga
+Submenu Arrow=arrow2.tga
+Start Menu Picture=start_menu2.png
+Start Menu Picture 2=start_menu2.png
+Name=Frutiger Linotype
+Color=0xffffff
+Size=7
+Shadow=0
+Style=Bold
+
+[Clock Font]
+Name=Frutiger Linotype
+Color=0xffffff
+Size=7
+Shadow=0
+Style=Bold
+
+[Title Font]
+Name=Frutiger Linotype
+Color=0xffffff
+Size=7
+Shadow=0
+Style=Bold
+
+[Small Clock Font]
+Name=Frutiger Linotype
+Color=0xffffff
+Size=6
+Shadow=0
+Style=Bold
+
+[Sounds]
+SystemAsterisk=Sounds\astersks.wav
+MenuCommand=Sounds\menusels.wav
+MenuPopup=Sounds\menupops.wav
+Minimize=Sounds\windmins.wav
+Startup=Sounds\startups.wav
+SystemDefault=Sounds\astersks.wav
+SystemExclamation=Sounds\exlams.wav
+SystemHand=Sounds\defaults.wav
+SystemQuestion=Sounds\questns.wav
+Open=Sounds\openprgs.wav
+Close=Sounds\closes.wav
+Maximize=Sounds\windmaxs.wav
+
+[Buttons]
+Name=Frutiger Linotype
+Color=0
+Size=7
+Shadow=0
+Style=Bold
+Pressed Color=0
+Normal=button_normal2.png
+Pressed=button_pressed2.png
+Disabled=button_disabled2.png
+Focused=button_focused2.png
+Left=3
+Top=3
+Right=3
+Bottom=3
+checkbox=
+radiobutton=radiobutton2.png
+
+[Task Panel]
+Use Bubble=Yes
+Name=Frutiger Linotype
+Size=7
+Style=Bold
+Color=0
+Shadow=0
+Title Color=0xffffff
+Selected Color=0xffffff
+Top Bar=
+Bottom Bar=
+Item=
+Selected=
+Top Left=
+Top Right=
+Bottom Left=
+Bottom Right=
+Item Left=
+Item Right=
+Select Left=
+Select Right=
+
+[SoftKey]
+Portrait=softkey2.png
+Landscape=softkey2.png
+Mode=Scaled
+Left Color=0
+Right Color=0
+Solid Color=0
+Use Theme Colors=FALSE
+Left Button=softkey_left_normal2.png
+Right Button=softkey_right_normal2.png
+Left Pressed=softkey_left_pressed2.png
+Right Pressed=softkey_right_pressed2.png
+Left Disabled=softkey_btn2.png
+Right Disabled=softkey_btn2.png

@@ -1,0 +1,4 @@
+title=Log Viewer
+icon=skin:icons/ebook.png
+exec=!LOGVIEWER
+description=Displays last launched program's output

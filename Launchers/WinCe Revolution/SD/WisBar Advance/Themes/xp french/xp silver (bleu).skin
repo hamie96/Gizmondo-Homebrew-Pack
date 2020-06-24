@@ -1,0 +1,164 @@
+[Skin Info]
+Author                  = MmmRevo
+AuthorEmail             = 
+Name                    = xp siver (bleu)
+HiRes                   = FALSE
+
+[Button Images]
+Start Menu Normal       = Start_Blue.bmp
+Start Menu Pressed      = Start_Blue.bmp
+Close Normal            = Close.bmp
+Close Pressed           = Close.bmp
+OK Normal               = OK.bmp
+OK Pressed              = OK.bmp
+Notify Normal           = 
+Notify Pressed          = 
+Volume Normal           = Volumedot.bmp
+Volume Pressed          = Volumedot.bmp
+Mute Normal             = VolumeMutedot.bmp
+Mute Pressed            = VolumeMutedot.bmp
+Battery/Memory Normal   = Batterydot.bmp
+Battery/Memory Pressed  = Batterydot.bmp
+Home Normal             = Homedot.bmp
+Home Pressed            = Homedot.bmp
+Menu Normal             = WisBarMenu.bmp
+Menu Pressed            = WisBarMenu.bmp
+Custom1 Normal          = minimize silver.bmp
+Custom1 Pressed         = minimize silver.bmp
+Custom2 Normal          = IO_XP_info_1_0.bmp
+Custom2 Pressed         = IO_XP_info_1_1.bmp
+Connection Normal       = Connection.bmp
+Connection Pressed      = Connection.bmp
+Disconnect Normal       = NoConnection.bmp
+Disconnect Pressed      = NoConnection.bmp
+SIP Normal              = SIP.bmp
+SIP Pressed             = SIP.bmp
+Battery/Memory Custom   = FALSE
+
+[Topbar]
+Portrait                = TaskBar.bmp
+Landscape               = TaskBar.bmp
+Mode                    = tiled
+Left Color              = 0x0
+Right Color             = 0x0
+Solid Color             = 0x0
+Use Theme Colors        = FALSE
+Left Margin             = 0
+Right Margin            = 0
+
+[Today Menubar]
+Portrait                = TaskBar.bmp
+Landscape               = TaskBar.bmp
+Display New Text        = FALSE
+Name                    = Tahoma
+Color                   = 0xFFFFFF
+Size                    = 7
+Shadow                  = 0
+Style                   = NORMAL
+Mode                    = tiled
+Left Color              = 0x0
+Right Color             = 0x0
+Solid Color             = 0x0
+Use Theme Colors        = FALSE
+
+[Menubar]
+Portrait                = TaskBar.bmp
+Landscape               = TaskBar.bmp
+Normal                  = IO_XP_Button_1_2.bmp
+Pressed                 = IO_XP_Button_1_1.bmp
+Disabled                = IO_XP_Button_1_0.bmp
+Name                    = Tahoma
+Color                   = 0x0
+Size                    = 7
+Shadow                  = 0
+Style                   = NORMAL
+Mode                    = scaled
+Left Color              = 0x0
+Right Color             = 0x0
+Solid Color             = 0x0
+Use Theme Colors        = FALSE
+
+[Volume Bubble]
+Image                   = IO_XP_volume_1_0.bmp
+
+[Start Menu Skin]
+Program Group           =
+Start Menu Picture      = IO_XP_startmenu_0_0.bmp
+Start Menu Picture 2    = IO_XP_startmenu_0_0.bmp
+Name                    = Tahoma
+Color                   = 0x0
+Size                    = 6
+Shadow                  = 0
+Style                   = NORMAL
+
+[Clock Font]
+Name                    = Tahoma
+Size                    = 6
+Color                   = 0xFFFFFF
+Shadow                  = 0
+Style                   = BOLD
+
+[Title Font]
+Name                    = Tahoma
+Color                   = 0xFFFFFF
+Size                    = 7
+Shadow                  = 0
+Style                   = NORMAL
+
+[Small Clock Font]
+Name                    = Tahoma
+Color                   = 0xFFFFFF
+Size                    = 6
+Shadow                  = 0
+Style                   = NORMAL
+
+[New Menu Font]
+Name                    = Tahoma
+Color                   = 0xFFFFFF
+Size                    = 7
+Style                   = NORMAL
+
+[Menubar Font]
+Name                    = Tahoma
+Color                   = 0xFFFFFF
+Size                    = 7
+Style                   = NORMAL
+
+[Sounds]
+SystemAsterisk          = Sounds\XP-Standard.wav
+MenuCommand             = Sounds\XP-Menübefehl.wav
+MenuPopup               = Sounds\XP-Sprechblase.wav
+Minimize                = Sounds\XP-Minimieren.wav
+Startup                 = Sounds\XP-Startvorgang.wav
+SystemDefault           = Sounds\XP-Ping.wav
+SystemExclamation       = Sounds\XP-Benachrichtigung.wav
+SystemHand              = Sounds\XP-Start.wav
+SystemQuestion          = Sounds\XP-Fehler.wav
+Open                    = Sounds\XP-Wiederherstellen.wav
+Close                   = Sounds\XP-Minimieren.wav
+Maximize                = Sounds\XP-Wiederherstellen.wav
+
+[Buttons]
+Name                    = Frutiger Linotype
+Color                   = 0
+Size                    = 7
+Shadow                  = 0
+Style                   = Bold
+Pressed Color           = 0x0
+Normal                  = IO_XP_Button_2_1.bmp
+Pressed                 = IO_XP_Button_2_2.bmp
+Disabled                = IO_XP_Button_2_0.bmp
+Focused                 = IO_XP_Button_2_3.bmp
+Left                    = 3
+Top                     = 3
+Right                   = 3
+Bottom                  = 3
+
+[Colors]
+Highlight               = 0xCC6633
+Highlight Text          = 0xFFFFFF
+Button Face             = 0xFFE8D8
+Button Shadow           = 0xFFE8B1
+WindowFrame             = 0xCC6633
+Tooltip Text            = 0x0
+Tooltip Background      = 0xFFE8D8

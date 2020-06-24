@@ -1,0 +1,6 @@
+title=Shutdown
+description=Shutdown the Giz
+icon=skin:icons/exit.png
+exec=/SD Card/Apps/PowerDown.exe
+clock=200
+volume=100

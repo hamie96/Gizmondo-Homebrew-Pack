@@ -1,0 +1,5 @@
+title=Exit
+description=Exit gizMenu
+icon=skin:icons/exit.png
+exec=!EXIT
+clock=200

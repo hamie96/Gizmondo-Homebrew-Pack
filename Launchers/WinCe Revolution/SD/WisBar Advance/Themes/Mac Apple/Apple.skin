@@ -1,0 +1,182 @@
+[Skin Info]
+Author=piXel
+AuthorEmail=
+Name=Apple
+HiRes=TRUE
+Notes=created 18-03-2005
+
+[Button Images]
+Start Menu Normal=start2.png
+Start Menu Pressed=start_p.png
+Close Normal=close.png
+Close Pressed=close_p.png
+OK Normal=ok.png
+OK Pressed=ok_p.png
+Notify Normal=notification.png
+Notify Pressed=notification_p.png
+Volume Normal=sound.png
+Volume Pressed=sound_p.png
+Mute Normal=muted.png
+Mute Pressed=muted_p.png
+Battery/Memory Normal=battery.png
+Battery/Memory Pressed=battery_p.png
+Home Normal=home.png
+Home Pressed=home_p.png
+Menu Normal=start1.png
+Menu Pressed=start2.png
+Custom1 Normal=custom1.png
+Custom1 Pressed=custom1_p.png
+Custom2 Normal=custom2.png
+Custom2 Pressed=custom2_p.png
+Connection Normal=connected.png
+Connection Pressed=connected_p.png
+Disconnect Normal=disconnected.png
+Disconnect Pressed=disconnected_p.png
+SIP Normal=
+SIP Pressed=
+Battery/Memory Custom=TRUE
+Signal Strength Normal=signal.png 
+Signal Strength Pressed=signal_p.png 
+Signal Strength Custom=TRUE 
+
+[Topbar]
+Portrait=header480.png
+Landscape=header640.png
+Mode=Scaled
+Left Color=0
+Right Color=0
+Solid Color=0
+Use Theme Colors=FALSE
+Left Margin=0
+Right Margin=2
+
+[Today Menubar]
+Portrait=footer480.png
+Landscape=footer640.png
+Display New Text=FALSE
+Name=Tahoma
+Color=0
+Size=7
+Shadow=0
+Style=None
+Mode=Scaled
+Left Color=0
+Right Color=0
+Solid Color=0
+Use Theme Colors=FALSE
+
+[Menubar]
+Portrait=subfooter480.png
+Landscape=subfooter640.png
+Normal=normal.png
+Pressed=pressed.png
+Disabled=disabled.png
+Left=5
+Top=6
+Right=5
+Bottom=4
+Name=Tahoma
+Color=0
+Size=7
+Shadow=0
+Style=None
+Mode=Scaled
+Left Color=0
+Right Color=0
+Solid Color=0
+Use Theme Colors=FALSE
+
+[Volume Bubble]
+Image=volbubble.png
+
+[Start Menu Skin]
+Program Group=progs.png
+Start Menu Picture=bckgrnd_menu.png
+Start Menu Picture 2=bckgrnd_menu.png
+Name=Tahoma
+Color=0
+Size=7
+Shadow=0
+Style=none
+
+[Clock Font]
+Name=Frutiger Linotype
+Color=0x333333
+Size=6
+Shadow=0xcccccc
+Style=Shadow
+
+[Title Font]
+Name=Frutiger Linotype
+Color=0x333333
+Size=6
+Shadow=0xcccccc
+Style=Shadow
+
+[Small Clock Font]
+Name=Frutiger Linotype
+Color=0x333333
+Size=6
+Shadow=0xcccccc
+Style=Shadow
+
+[Sounds]
+SystemAsterisk=Sounds\astersks.wav
+MenuCommand=Sounds\menusels.wav
+MenuPopup=Sounds\menupops.wav
+Minimize=Sounds\windmins.wav
+Startup=Sounds\startups.wav
+SystemDefault=Sounds\defaults.wav
+SystemExclamation=Sounds\exlams.wav
+SystemHand=Sounds\defaults.wav
+SystemQuestion=Sounds\questns.wav
+Open=Sounds\openprgs.wav
+Close=Sounds\closes.wav
+Maximize=Sounds\windmaxs.wav
+
+[Buttons]
+Name=Tohama
+Color=0
+Size=7
+Shadow=0
+Style=None
+Pressed Color=0
+Normal=button_n.png
+Pressed=button_p.png
+Disabled=button_d.png
+Focused=button_f.png
+Left=5
+Top=4
+Right=5
+Bottom=4
+checkbox=checkbox.png
+radiobutton=radiobutton.png
+
+[Task Panel]
+Use Bubble=no
+Name=Tahoma
+Size=7
+Style=None
+Color=0
+Shadow=0
+Title Color=0xFFFFFF
+Show Title=No
+Title Left=0
+Title Right=0
+Title Align=0
+Show Separators=No
+Separator Color=0
+Selected Color=0xffffff
+Buttons=taskpnl.png
+Top Bar=topbar.png
+Bottom Bar=bottombar.png
+Item=taskitem.png
+Selected=taskselect.png
+Top Left=3
+Top Right=3
+Bottom Left=2
+Bottom Right=2
+Item Left=2
+Item Right=2
+Select Left=4
+Select Right=4

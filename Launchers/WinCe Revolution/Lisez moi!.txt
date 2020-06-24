@@ -1,0 +1,133 @@
+Bienvenue dans le mode Windows_Ce by MmmRevolution (M3R) 
+
+
+v1.0 réalisé le 1/10/07 
+
+V1.1 réalisé le 3/10/07: 
+-2 nouveaux models de barre d'outil (wisbar) french et french xp crée par MmmRevo 
+-un peu plus de langue française 
+-ajout des logiciels word, power point, exel et image
+
+V1.2 réalisé le 8/10/07
+-nouveau design pour ''arrêter'' 
+-nouveaux icones pour media player, bloc notes, arrêter, pocketGBA 
+-logiciel media player, bloc notes, foxitreader, traduit en français!
+-ajout du logiciel paint préalablment traduit en français 
+-ajout du logiciel XacRett qui permet de décompresser les archives
+-modification du fichier Locknload.ini  
+-icone gizlauch supprimer 
+-moins de fichier à placer à la racine
+-menu control panel et propriétés clavier en français, icones différent 
+-nouveau windows_ce.bmp
+
+v1.3 réalisé le 19/10/07 
+-word, exel, powerpoint, HalliReader traduit en français (traduction partiel pour exel et powerpoint)
+-amélioration du logiciel XacRett qui se rend plus simple d'utilisation
+-logiciel image remplacer par GQe préalablement traduit en français 
+-ajout du logiciel gestionnaire de taches 
+-ajout de gizlaunch qui permet de revenir en mode normal (à noter qu'il était déjà dans la v1.1 et la v1.0 mais sans fonctionner)
+-modification du fichier Locknload.ini 
+-modification du control panel (l'indexation du thread a était refait pour pouvoir faire les connexion parametrable utile pour le bluetooth prochain) merci à K3n7!
+
+
+Windows_Ce Mini réalisé le 01/12/07 
+
+
+v1.4 réalisé le 08/12/07
+-ajout du logiciel visualgpsgiz traduit en français  
+-nouveau design pour ecursor 
+-nouveau design pour l'autorun et windows_ce.bmp 
+-modifications wisbaradvance, interface dès le premier demarrage (mieux pour les noob), taille reduite (de 8mo à 6,1mo) 
+-ajout du raccourci WisSettings
+-ajout de l'interface Mac Apple pour Wisbaradvance
+-ajout des interface xp silver bleu et xp silver vert pour wisbaradvance
+-ajout du nouveau pocketGBA en fullsreen
+-modifications du bloc notes (plus de français)
+-ajout des plugins FLV permettant ainsi de lire les vidéo au format .flv (video télécharger sur youtube, dailymotion...) avec le logiciel VidPlayer
+-modifications control panel (date/heure en français)
+-icones deja present sur le bureau, supprimer dans demarrer, programs
+-la taille du WinCe sur la carte sd est inférieur à 20mo!
+
+
+Présentation:
+
+Dans ce pack il y a: 
+-SD 
+-gizmoboot.cfg 
+-Locknload.ini 
+-windows_ce.bmp 
+-windows_ce.exe 
+-Autorun.exe
+
+il faut mettre le tout à la racine de votre card SD.
+
+
+Instruction pour le premier démarrage:
+Quand vous lancez windows_ce une fenetre s'ouvre ,cliquez sur ok, 
+au début le fond d'écran est bleu, 
+Pour mettre le fond d'écran allez dans demarrer, settings, control panel, display, background,
+et choisissez votre fond attention il doit etre en .bmp! (pour ceux qui passe de la v1.1 à la V.2 un message d'erreur peut s'afficher au moment ou vous cliquez sur display, cliquer sur ok et continuer normalement)
+
+Pour tout les démarrage suivant:
+Il y a ecursor et wisbaradvance qui se lance, il y a aussi une fenêtre qui s'affiche(wisbar advance) cliquez sur ok et voila! 
+
+Dans démarrer, settings, taskbar and start menu..., general seul always on top doit être coché.
+
+Il est possible de changer l'interface de wisbaradvance dans démarrer, programs, wisSettings! 
+
+
+
+Les application sur le bureau sont: 
+-bloc notes 
+-media player (lecteur multimédia)
+-video player (lecteur multimédia), (il est possible de mettre cette application en français dans options, options..., langue)
+-giz board (by Blackhorn) 
+-Arrêter (style vista by MmmRevo) 
+-gizlaunch (permet de revenir en mode normal)
+
+Les application en plus, dans demarrer, programs sont: 
+-foxit reader (lecteur .pdf)
+-haalreader (lecteur texte)
+-pocketGba (émulateur gba fullscreen)
+-word (lecteur .doc et .rtf)
+-power point (lecteur .ppt et .pps)
+-exel (lecteur .xl)
+-paint (logiciel de dessin)
+-XacRett (décomprésseur d'archive) 
+-GQe (lecteur d'image .bmp, .jpg, .gif, .png) 
+-Gestionnaire des taches (comme quand on fait ctrl+alt+suppr sur son ordi)
+-Visualgpsgiz (logiciel gps, mode d'emploi dispo sur le forum gizmondo.new)
+
+
+Mode d'emploi de gizlaunch: 
+Pour revenir en mode normal double-cliquez sur gizlaunch sur le bureau, une fenetre ''fatal application error'' s'affiche, attendez et 
+vous arriverai en mode normal! (à noter un petit bug, le bas du menu jeux est coupé)
+
+Mode d'emploi d'XacRett: 
+Lancez le logiciel, cliquez sur type de fichier à decompresser, selectionnez les types d'archives que vous voulez lancer avec XacRett, cliquez sur ok, 
+cliquez sur yes(sur la fenêtre qui s'ouvre), cliquez sur ok(sur la fenêtre qui s'ouvre), fermez l'application. 
+Maintenant quand vous avez une archive du type que vous avez selectionné, le logo d'XacRett aparait(croix verte), il suffit
+de double-cliquer sur l'archive et son contenu sera envoyer dans My Computer.
+
+
+voila, j'espère que ça vous plait! 
+pour toutes sugestions, remarques... une adresse email: mmmrevolution@gmail.com 
+
+
+salut et longue vie à la gizmondo!
+
+
+MmmRevolution 
+
+
+
+Credits: 
+merci à Ez pour les articles sur son site, 
+merci à K3n7 pour les modifs du control panel et pour son aide, 
+merci à Blackhorn pour Gizboard, 
+merci à Freelx pour son aide avec gizlaunch, 
+et merci aux anglais pour leurs applications!
+
+
+Sponsors: nougat de Montélimar, cacahuete du Grolang et les éditions pour nain
+ 

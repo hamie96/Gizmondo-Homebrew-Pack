@@ -1,0 +1,260 @@
+[Skin Info]
+Author=Xcilion
+AuthorEMail=
+Name=Windows Vista PE: AERO
+HiRes=True
+Notes=v1.1 (Phone)
+PleaseWait=pleasewait.tga
+
+[Topbar]
+Portrait=taskbar_portrait.png
+Landscape=taskbar_landscape.png
+Mode=Scaled
+Left Color=0
+Right Color=0xffffff
+Solid Color=0xff0000
+Use Theme Colors=False
+Left Margin=0
+Right Margin=0
+
+[Task Panel]
+Use Bubble=no
+Name=Segoe UI
+Size=6
+Style=Bold,Shadow
+Color=0x7A7D83
+Shadow=0xFFFFFF
+Title Color=0xFFFFFF
+Selected Color=0x000000
+Show Title=No
+Top Bar=tasktopbar.png
+Bottom Bar=taskbottombar.png
+Item=taskitem.png
+Selected=taskselect.png
+Top Left=75
+Top Right=22
+Bottom Left=75
+Bottom Right=22
+Item Left=8
+Item Right=8
+Select Left=8
+Select Right=8
+Sidebar=sidebar.png
+Buttons=taskbuttons.png
+ImageCount=8
+
+
+[Button Images]
+Start Menu Normal=start.png
+Start Menu Pressed=start-hi.png
+Close Normal=close.png
+Close Pressed=close-hi.png
+OK Normal=ok.png
+OK Pressed=ok-hi.png
+Notify Normal=notify.png
+Notify Pressed=notify-hi.png
+Volume Normal=volume.png
+Volume Pressed=volume-hi.png
+Mute Normal=mute.png
+Mute Pressed=mute-hi.png
+Battery/Memory Normal=battery.png
+Battery/Memory Pressed=battery-hi.png
+Home Normal=home.png
+Home Pressed=home-hi.png
+Menu Normal=settings.png
+Menu Pressed=settings-hi.png
+Custom1 Normal=custom1.png
+Custom1 Pressed=custom1-hi.png
+Custom2 Normal=custom2.png
+Custom2 Pressed=custom2-hi.png
+Connection Normal=connected.png
+Connection Pressed=connected-hi.png
+Disconnect Normal=disconnected.png
+Disconnect Pressed=disconnected-hi.png
+SIP Normal=
+SIP Pressed=
+Battery/Memory Custom=TRUE
+Signal Strength Normal=signal.png
+Signal Strength Pressed=signal-hi.png
+Signal Connected Normal=phone.png
+Signal Connected Pressed=phone-hi.png
+Signal Strength Custom=TRUE
+Vibrate Normal=vibrate.png 
+Vibrate Pressed=vibrate-hi.png
+
+[Clock Font]
+Name=Segoe UI
+Color=0xFFFFFF
+Size=6
+Shadow=0x646464
+Style=Bold
+
+[Title Font]
+Name=Segoe UI
+Color=0xFFFFFF
+Size=6
+Shadow=0x646464
+Style=Bold
+
+[Small Clock Font]
+Name=Segoe UI
+Color=0xFFFFFF
+Size=6
+Shadow=0x000000
+Style=
+
+[Volume Bubble]
+Image=volumebubblephone.png
+
+[Today Menubar]
+Portrait=today_portrait.png
+Landscape=today_landscape.png
+Display New Text=FALSE
+Name=Segoe UI
+Color=0xFFFFFF
+Size=6
+Shadow=0x646464
+Style=Bold
+Mode=Scaled
+Left Color=0
+Right Color=0
+Solid Color=0
+Use Theme Colors=FALSE
+
+[Menubar]
+Portrait=appmenubar_portrait.png
+Landscape=appmenubar_landscape.png
+Normal=menubuttonnormal.png
+Pressed=menubuttonpressed.png
+Disabled=menubuttondisabled.png
+Name=Segoe UI
+Color=0x000000
+Pressed Color=0x000000
+Size=6
+Shadow=0xFFFFFF
+Style=Shadow,Bold
+Mode=Scaled
+Left Color=0
+Right Color=0
+Solid Color=0
+Use Theme Colors=FALSE
+
+[Buttons]
+Name=Segoe UI
+Color=0x000000
+Size=6
+Shadow=0xFFFFFF
+Style=Shadow,Bold
+Pressed Color=0x000000
+Normal=buttonnormal.png
+Pressed=buttonpressed.png
+Disabled=buttondisabled.png
+Focused=buttonfocused.png
+Left=6
+Top=6
+Right=6
+Bottom=6
+checkbox=checkbox.png
+radiobutton=radiobutton.png
+
+[Start Menu Skin]
+Desktop Icon=desktop.tga
+Program Group=programgroup.tga
+Settings Group=settingsgroup.tga
+Help Icon=helpgroup.tga
+Find Icon=searchgroup.tga
+Submenu Arrow=arrow.tga
+Start Menu Picture=cascade1.png
+Start Menu Picture 2=cascade1.png
+Name=Segoe UI
+Color=0x7A7D83
+Size=7
+Shadow=0xFFFFFFF
+Style=
+
+[Sounds]
+SystemAsterisk=Sounds\astersks.wav
+MenuCommand=Sounds\menusels.wav
+MenuPopup=Sounds\menupops.wav
+Minimize=Sounds\windmins.wav
+Startup=Sounds\startups.wav
+SystemDefault=Sounds\astersks.wav
+SystemExclamation=Sounds\exlams.wav
+SystemHand=Sounds\defaults.wav
+SystemQuestion=Sounds\questns.wav
+Open=Sounds\openprgs.wav
+Close=Sounds\closes.wav
+Maximize=Sounds\windmaxs.wav
+
+[Custom Notifications] 
+0=New Text Message 
+1=New MMS Message 
+2=Text Messages 
+3=Voice Mail 
+4=Reminder 
+5=Main Battery Low 
+6=Phone - Incoming... 
+7=Missed Call 
+8=Call Forwarding 
+9=Call On Hold 
+10=Voice Command 
+11=New Network Detected 
+12=Multiple Networks Detected 
+13=Sync Error 
+
+[Notify.New Text Message] 
+Normal=New_Mail_SMS.png 
+Pressed=New_Mail_SMS_p.png 
+
+[Notify.New MMS Message] 
+Normal=New_Mail_SMS.png 
+Pressed=New_Mail_SMS_p.png 
+
+[Notify.Text Messages] 
+Normal=Mail_SMS_Sent.png 
+Pressed=Mail_SMS_Sent_p.png 
+
+[Notify.Voice Mail] 
+Normal=VoiceMail.png 
+Pressed=VoiceMail_p.png 
+
+[Notify.Reminder] 
+Normal=Reminder.png 
+Pressed=Reminder_p.png 
+
+[Notify.Main Battery Low] 
+Normal=Main_Battery_Low.png 
+Pressed=Main_Battery_Low_p.png 
+
+[Notify.Phone - Incoming...] 
+Normal=Incoming_Call.png 
+Pressed=Incoming_Call_p.png 
+
+[Notify.Missed Call] 
+Normal=Missed_Call.png 
+Pressed=Missed_Call_p.png 
+
+[Notify.Call Forwarding] 
+Normal=Call_forwarding.png 
+Pressed=Call_forwarding_p.png 
+
+[Notify.Call On Hold] 
+Normal=Call_On_Hold.png 
+Pressed=Call_On_Hold_p.png 
+
+[Notify.Voice Command] 
+Normal=Voice_Command.png 
+Pressed=Voice_Command_p.png 
+
+[Notify.New Network Detected] 
+Normal=New_Network_Detected.png 
+Pressed=New_Network_Detected_p.png 
+
+[Notify.Multiple Networks Detected] 
+Normal=Multiple_Networks_Detected.png 
+Pressed=Multiple_Networks_Detected_p.png 
+
+[Notify.Sync Error] 
+Normal=Sync_Error.png 
+Pressed=Sync_Error_p.png 
+

@@ -1,0 +1,4 @@
+title=About
+icon=skin:icons/about.png
+exec=!ABOUT
+description=Info about GMenu2X
