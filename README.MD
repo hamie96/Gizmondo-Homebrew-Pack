@@ -6,6 +6,7 @@ Special thanks goes to sweetlilmre who helped me fix issues with running Grodo o
 ## ***Getting Started with FireFly's Launcher***
 Firefly's Launcher is a custom Gizmondo launcher that allows you to easily launch homebrew emulators and programs without having to use the WindowsCE mode. Most emulators in this pack will work with Firefly's Launcher, however some (like SquidgEngine.exe) are designed to only work with WindowsCE mode.
 <br>
+<br>
 *How to setup Firefly's Launcher*
 1. Download the autorun.exe file from the Utilites folder
 2. Rename autorun.exe to FireFlyLauncher.exe
