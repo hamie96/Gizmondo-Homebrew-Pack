@@ -15,13 +15,16 @@ Updating Your Gizmondo to Service Pack B:
 of your SD card
 2. Run autorun.exe from the Games Directory
 
-Entering Windows CE on your Gizmondo
-1. Place files from LockNLoad folder onto the root of your SD card (leave WinCE as a folder)
-2. run autorun.exe in Games Directory
-
+Using LockNLoad with FireFly's Launcher
+(LockNLoad is an application that allows you to boot the Gizmondo into WindowsCE)
+1. Copy the wince folder to the root of the SD card
+2. Copy LocknLoad.exe and LocknLoad.ini to the wince folder
+3. Rename LocknLoad.exe to wince.exe
+3. Place the gizmoboot.cfg and AUTORUN.EXE on the root of the SD card
+4. Launch FireFly Launcher and then scroll down to wince
 
 Backup download links can be found at: http://web.archive.org/web/*/http://gizmondo.stu.ac/TTA/*
 
-
+(Note: psx4giz does not currently work right now. I am unsure if there are files missing or if the emulator is compiled for a different system. Please contact me if you have a working version of the psx4giz file.)
 
 If you have any questions, please contact me at hamie96@gmail.com
