@@ -3,7 +3,8 @@
 Thanks to Critical Hippo, Reesy, sweetlilmre, and Notaz for their support and help in gathering Gizmondo binaries.
 Special thanks goes to sweetlilmre who helped me fix issues with running Grodo on my Gizmondo.
 
-***READ HERE***
+## ***READ HERE***
+<br>
 Please use Firefly's Launcher. Firefly's Launcher allows you to play all the emulators without having to run WindowsCE mode.
 Simply place the autorun from the Firefly folder onto the root of your SD card.
 A few emulators such as SquidgEngine will not work with Firefly's launcher. A way around this is to rename them to
