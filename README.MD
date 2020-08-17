@@ -3,19 +3,20 @@
 Thanks to Critical Hippo, Reesy, sweetlilmre, and Notaz for their support and help in gathering Gizmondo binaries.
 Special thanks goes to sweetlilmre who helped me fix issues with running Grodo on my Gizmondo.
 
-## ***READ HERE***
+## ***Getting Started with FireFly's Launcher***
+Firefly's Launcher is a custom Gizmondo launcher that allows you to easily launch homebrew emulators and programs without having to use the WindowsCE mode. Most emulators in this pack will work with Firefly's Launcher, however some (like SquidgEngine.exe) are designed to only work with WindowsCE mode.
 <br>
-Please use Firefly's Launcher. Firefly's Launcher allows you to play all the emulators without having to run WindowsCE mode.
-Simply place the autorun from the Firefly folder onto the root of your SD card.
-A few emulators such as SquidgEngine will not work with Firefly's launcher. A way around this is to rename them to
-SquidgEngine.exe and place them on the root of the SD card alongside a generic autorun file. In this case, make sure to rename
-Firefly's Launcher to something other than autorun.
+*How to setup Firefly's Launcher*
+1. Download the autorun.exe file from the Utilites folder
+2. Rename autorun.exe to FireFlyLauncher.exe
+3. Place the FireflyLauncher.exe and gizmoboot.cfg on the root of your SD card
+4. Launch FireflyLauncher from the games menu on your Gizmondo
 
 ## Updating Your Gizmondo to Service Pack B:
 1. Place autorun.exe and install.bin onto the root
 of your SD card
 2. Run autorun.exe from the Games Directory
-
+3. 
 ## Using LockNLoad with FireFly's Launcher
 (LockNLoad is an application that allows you to boot the Gizmondo into WindowsCE)
 1. Copy the wince folder to the root of the SD card
