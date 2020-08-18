@@ -1,0 +1,46 @@
+DOSBox 0.63 CVS (15.02.2006) PocketPC Port.
+
+Ported by n0p (http://n0p.averest-k.ru)
+
+Some tips:
+1. Do not try to run "modern" ;) games. Games released before 1993 should run OK. 
+2. Use core=verysimple setting where possible.
+3. Don't set cycles larger then 1000-2000.
+4. Play with frameskip - 3-5 is OK for almost every game.
+5. Overclock your processor (use XCPUScalar or similar). But use with care
+6. If there's any GAPI "tweakers" for your PDA - use them.
+
+Many thanks to:
+mamaich, Yury Sidorov, Boris Letocha, Jehl Xavier, Wall Will
+
+Changelog:
+16.02.2006>
+	    CVS Sync, but: used old mixer code (new causes wowing sound and high cpu load),
+	    native CPU autocycling removed in favor of Yury's code,
+	    mapper removed (does anyone use it on PDA?).
+15.02.2006> Lot of work by Yury Sidorov:
+	    + Greatly improved screen output code. (cellupdate removed)
+	    + Semitransparent toolbar. Can be disabled (fktransparent)
+	    * Non-standard video modes like 360x240 are handled better.
+	    * Improved cpu autocycling.
+	    * Frameskip upto 30 (testing purposes)
+	    * Real FPS shown. Means then nothing updated on screen fps is 0.
+	    * When autocycling on, average cycles is shown.
+	    - Corrected CPU Load measurement.
+	    n0p:
+	    + Added ability to set custom toolbar by name.
+
+12.01.2006> + Added "verysimple" 286 core by Boris Letocha (! Great !).
+            + 360x240 mode support (Fixes Battle Isle, Settlers).
+            + Direct GAPI output option. (set directgapi=true in [sdl] section).
+12.12.2005> CVS sync. iPAQ scancodes workarounds.
+28.09.2005> Force onscreen keyboard mode added. Lefthand screen rotation added.
+15.08.2005> CVS sync.
+22.07.2005> CVS sync.
+19.07.2005> Made smart update an option. Set cellupdate value in dosbox.conf to disable.
+13.07.2005> Synced with CVS. Added patches from Yury Sidorov
+11.07.2005> GFX output optimizations
+07.07.2005> + More speed. Speed at least can be compared to 0.61
+05.07.2005> + Some speed improovements. You'll feel'em ;)
+07.06.2005> initial build
+ 

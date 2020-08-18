@@ -1,0 +1,6 @@
+>> trying 32MB allocation :failed
+>> trying 24MB allocation : OK!!
+> cbx=2
+> cby=480
+> assemdebug r11= 2
+>> Debug r11=0

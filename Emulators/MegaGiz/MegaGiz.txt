@@ -1,0 +1,49 @@
+   _____                        ________.__        
+  /     \   ____   _________   /  _____/|__|_______
+ /  \ /  \_/ __ \ / ___\__  \ /   \  ___|  \___   /
+/    Y    \  ___// /_/  > __ \\    \_\  \  |/    / 
+\____|__  /\___  >___  (____  /\______  /__/_____ \
+        \/     \/_____/     \/        \/         \/
+
+ v 1.0 by p0p - emu by Pedram - original emu by ??
+            http://gizmondo.guruwork.de
+         mailto: master@gizmondo.guruwork.de
+
+
+What this does
+==============
+MegaGiz is a PC tool that allows you to open a SEGA
+Genesis rom file and generate an executable for
+GIZMONDO handhelds, that will run the actual rom by
+emulating a SEGA Genesis/MegaDrive on your handheld.
+
+
+How to use it
+=============
+Open MegaGiz on your PC running Windows98/NT/2K/XP,
+hit "open ROM" and select a valid SEGA Genesis or
+MegaDrive romfile, smaller or equal 513 KBytes and
+unzipped if necessary. Hit "make EXE" to generate
+the Gizmondo executable. Use a name like "01.exe",
+copy the EXE to your SD card and run it on your
+Gizmondo handheld.
+
+
+Why does it refuse to work
+==========================
+Are you trying to run MegaGiz on your Gizmondo ?
+It is a PC application that will produce the EXE
+for Gizmondo ! Are you using verified roms from
+Tosec and/or GoodList ? You should be doing that!
+Are you sure your rom is smaller than 514 KBytes
+and has not been cut ? Check the status window!!
+
+
+Disclaimer
+==========
+I cannot be held responsible for anything that dies,
+explodes or gets bricked using my application. I am
+not supplying any rom with this, I do not have any
+roms myself and will not send any to anyone. Using
+rom files without owning the original cartridge is
+illegal. You have been warned.

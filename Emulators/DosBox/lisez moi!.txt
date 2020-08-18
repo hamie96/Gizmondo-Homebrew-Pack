@@ -1,0 +1,110 @@
+Attention vous allez rentrer dans le monde DOS sur Gizmondo!
+
+
+Premier lancement: 
+
+1- Copier à la racine de votre SD le dossier DosBox, DosBox.exe et DosBox.ini avec l'autorun.
+2- Lancer DosBox en mode normal!
+3- Vous voila sous DOS, 
+4- Faire defiler les fichier avec la gachette gauche, 
+5- lorsque vous trouvez : "FF2.bat" cacher ecursor (home) et appuier sur la touche play (ou cliquez sur entrer sur le 
+clavier), le jeux Fire and forget II se lance. 
+6- JOUER!
+
+
+Les touches: 
+
+Home: cacher, faire réaparaitre Ecursor
+Son, luminosité: quitter l'application
+Gachette gauche: faire défiler les jeux dans le menu  
+Gachette droite: revenir au menu pendant le jeux, écrire slash
+Play: ok, action 
+Rew: action 2
+Vew: action 3
+Stop: action 4
+Croix multi: droite, gauche...
+
+
+
+Maintenant, allons un peu plus en profondeur : 
+
+1 - Ajouter des jeux 
+- telecharger des vieux jeux dos en "abandonware" et copier le contenu des jeux dans le dossier "Drive" (comme FF2) 
+- Vous pouvez créer des fichier bat comme ff2.bat qui permet de lancer l'appli plus simplement (sinon, il faut aller dans 
+le dossier et lancer le jeu, donc ecrire : cd ff2 "entrée" - ff2 "entrée" // ce qui prends des plombes avec le clavier 
+virtuel); 
+Pour se faire, copiez simplement le fichier ff2.bat et modifiez le avec un traitement de texte comme ci-dessous: 
+
+cd [NOM DE VOTRE DOSSIER ex : ff2] 
+[NOM DU FICHIER DE LANCEMENT ex : FF2EGA.exe] 
+cd \ => ça permet de retourner a la racine du disque virtuel 
+
+Sauvez le en lui donnant un nom qui permet d'identifier le jeu... 
+
+Lancez dosBOX, faites defiler les fichiers et vous devriez trouver votre jeux!
+
+2- Setup des jeux ! 
+Attention, certains jeux DOS necessitent de lancer un setup avant de pouvoir jouer. Souvent pour les paramettres 
+de carte son. Les papis s'en souviendront... Là dedans on vous demande souvent des questions incomprehensible... 
+DosBox est configuré par defaut avec ces valeurs : 
+
+Carte son : Sound Blaster 
+Adress / BASE : 220 
+IRQ : 7 
+DMA : 1 
+HDMA 5 
+
+Le mieux si vous pouvez est de lancer le setup depuis votre pc, choisir ces valeurs et copier le jeu après. 
+Sinon, il vous suffit d'ajouter dans votre fichier de lancement, le lancement du setup, ça vous donnera un fichier bat 
+comme ça : 
+
+cd ff2 
+setup.exe 
+ff2.exe 
+cd\ 
+
+Mais ça le lancera à chaque fois... Ou alors vous allez dans le repertoire et lancez le setup à la main... A vous de voir. 
+
+3 Le DOS et le clavier virtuel 
+- Le clavier virtuel a une barre de scroll jaune a droite, il suffit de faire un drag and drop vers le haut ou le bas 
+sur cette barre pour voir le reste du clavier. Il y a un bouton pour les options (qui ne seront pas sauvegardées a 
+la sortie). A part ça c'est un clavier quoi ! 
+Voici une liste de commande possible:
+(Les commandes ci-dessous doivent être tappées et suivies de "entrée") 
+- Pour lister les fichiers : dir 
+- pour entrer dans un dossier : cd nomdudossier 
+- pour retourner dans le dossier precedent : cd.. 
+- pour lancer un programme : nomduprogramme (.exe .bat .com ) 
+- pour retourner a la racine : cd \ 
+
+etc, etc... vous trouverez certainement une liste facilement sur le web... 
+
+
+4 LE FICHIER dosbox.conf 
+A MANIPULER AVEC PRECAUTION ou tout au moins, faite une sauvegarde avant de le ruiner completement... 
+
+Tout est expliqué dedans, c'est très bien commenté... 
+
+Les points importants : 
+
+mount c "/SD Card/DOSBox/drive"   (à la fin de la page)
+cette ligne sert à monter le disque virtuel. Si vous placez DosBOX ailleurs, vous devez editer cette ligne avec 
+le bon chemin. Sinon, pas besoin. 
+
+frameskip=0 
+J'ai remarqué qu'avec une valeur de 3, ça tournait mieux... 
+
+etc... En fait en regardant, là, je remarque qu'il y a toutes les infos dedans, inutile de réexpliquer, de toute façon, 
+c'est juste si vous voulez bidouiller. 
+
+
+Voilà, voilà. 
+C'est pas bien compliqué... 
+
+Encore une fois, n'esperez pas lancer des jeux qui ont moins de 15 ans ! 
+ça tournera peut-etre, mais ce sera tout à fait injouable, tappez dans les valeurs sures (meme coolspot rame a bloc 
+et il date de 1994 ou 93 ! ) 
+ 
+
+
+Tutoriel rédigé par Zoo modifié par MmmRevolution

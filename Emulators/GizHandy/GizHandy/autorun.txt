@@ -1,0 +1,17 @@
+emu/handy/keyconfig/BUTTON_UP=0
+emu/handy/keyconfig/BUTTON_DOWN=1
+emu/handy/keyconfig/BUTTON_LEFT=2
+emu/handy/keyconfig/BUTTON_RIGHT=3
+emu/handy/keyconfig/BUTTON_A=4
+emu/handy/keyconfig/BUTTON_B=6
+emu/handy/keyconfig/BUTTON_OPT1=10
+emu/handy/keyconfig/BUTTON_OPT2=11
+emu/handy/keyconfig/BUTTON_PAUSE=8
+emu/handy/keyconfig/BUTTON_MAINMENU=9
+emu/handy/nScreenMode=6
+emu/handy/nAudioEnabled=0
+emu/handy/nSkipFrameValue=8
+emu/handy/nGammaCorrection=10
+emu/handy/nShowFPS=1
+emu/handy/CpuClockSpeed=5
+emu/handy/UseGamesConfig=0

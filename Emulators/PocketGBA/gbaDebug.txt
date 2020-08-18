@@ -1,0 +1,14 @@
+>> trying 32MB allocation :failed
+>> trying 24MB allocation : OK!!
+> cbx=2
+> cby=480
+> assemdebug r11= 2
+> Cart selected :
+>>\SD Card\PocketGBA\339_Sonic_Advance_MULTI_GBA-LIGHTFORCE.zip
+>> ZIP file is selected
+>>>> Find gba file. size=800000
+>> CART. path = \SD Card\PocketGBA
+>>>> read zip size = 800000
+>> Load cart. OK!
+>> Loaded cart : \SD Card\PocketGBA\339_Sonic_Advance_MULTI_GBA-LIGHTFORCE.zip
+>> Debug r11=1049632
