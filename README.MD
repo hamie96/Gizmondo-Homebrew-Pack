@@ -17,7 +17,8 @@ Firefly's Launcher is a custom Gizmondo launcher that allows you to easily launc
 1. Place autorun.exe and install.bin onto the root
 of your SD card
 2. Run autorun.exe from the Games Directory
-3. 
+
+
 ## Using LockNLoad with FireFly's Launcher
 (LockNLoad is an application that allows you to boot the Gizmondo into WindowsCE)
 1. Copy the wince folder to the root of the SD card
