@@ -43,11 +43,14 @@ If none of these fix your issues, then you will have to reset the operating syst
 
 Wipe your SD card, then install the spb_downgrader.rar contents onto your SD card. spbb_downgrader is a specific service pack that flashes your Gizmondo and reformats the SD Card. Once the OS reloads, it will prompt you to format the filesystem. After this is complete, turn off the system and replace the files with the Service Pack B from this repostiory.
 
-***Pre-Boot Fix (Run OS Update whilst Booting Up)***
+
+***Pre-Boot Fix(Run OS Update whilst Booting Up)***
+
 This is a last resort fix that may fix issues where the system does not boot to the Gizmondo GUI.
 
 Press the [Power] button, till you get the options to Keylock, Power Settings, FlightMode and insert SD Card with “ServicePack B DownGrader”.
 Once you see the final screen, with the green circle Tick “Update Completed Successfully!” Press the [Play] button to restart your Gizmondo and with luck, should fully boot up to the Gizmondo Gui.
+
 
 ***Active Sync***
 
