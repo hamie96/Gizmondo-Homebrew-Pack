@@ -30,7 +30,10 @@ of your SD card
 Backup download links can be found at: http://web.archive.org/web/*/http://gizmondo.stu.ac/TTA/*
 
 ## **Recovering a Dead Gizmondo**
+
 (Courtesy of GizGuides)
+
+
 Common Issues:
 - Corrupted SD Card: First try removing the SD card and booting up
 - Soft Boot: Press and hold down for upto 10 seconds, [Home] and [Power] buttons together. This should do a warm boot, and reset your Gizmondo.
@@ -58,6 +61,7 @@ Once you see the final screen, with the green circle Tick “Update Completed Su
 Active Sync can sometimes be used to repair a dead Gizmondo (low success rate). [Files can be found for it here](https://archive.org/details/gizactivesync_202407). [Guide for ActiveSync here](http://gizguides.wikidot.com/asguide).
 
 ***Gizmondo Control Center***
+
 To be updated when I get access to the software.
 
 (Note: psx4giz does not currently work right now. I am unsure if there are files missing or if the emulator is compiled for a different system. Please contact me if you have a working version of the psx4giz file.)
