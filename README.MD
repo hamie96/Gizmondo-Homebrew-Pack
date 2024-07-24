@@ -29,7 +29,7 @@ of your SD card
 
 Backup download links can be found at: http://web.archive.org/web/*/http://gizmondo.stu.ac/TTA/*
 
-##**Recovering a Dead Gizmondo**
+## **Recovering a Dead Gizmondo**
 (Courtesy of GizGuides)
 Common Issues:
 - Corrupted SD Card: First try removing the SD card and booting up
