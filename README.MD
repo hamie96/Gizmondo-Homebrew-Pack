@@ -39,6 +39,7 @@ Common Issues:
 If none of these fix your issues, then you will have to reset the operating system (This is recommended over attempting a hard boot).
 
 [Link to Homebrew Patch](https://web.archive.org/web/20060720194019/http://gizmondo.stu.ac:80/TTA/Bootloader.zip) (This is an old patcher, do not use unless other methods don't work)
+
 [Link to spb_downgrader.rar](https://archive.org/download/GizmondoSDK/spb%20downgrader.rar)
 
 Wipe your SD card, then install the spb_downgrader.rar contents onto your SD card. spbb_downgrader is a specific service pack that flashes your Gizmondo and reformats the SD Card. Once the OS reloads, it will prompt you to format the filesystem. After this is complete, turn off the system and replace the files with the Service Pack B from this repostiory.
